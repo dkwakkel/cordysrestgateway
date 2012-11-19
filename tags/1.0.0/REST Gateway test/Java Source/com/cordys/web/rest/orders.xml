@@ -1,0 +1,318 @@
+
+<tuple
+	lastModified="1340975950700"
+	key="/Cordys/servicemapping/resttosoap/orders.xml"
+	level="organization"
+	name="orders.xml"
+	original="/Cordys/servicemapping/resttosoap/orders.xml">
+	<old>
+		<RESTMapping
+			xmlns="http://schemas.cordys.com/generic/rest/1.0"
+			version="1.0">
+			<Resource>
+				<Name>orders</Name>
+				<NamespacePrefixes>
+					<NamespacePrefix>
+						<Prefix>nsp0001</Prefix>
+						<Namespace>testns</Namespace>
+					</NamespacePrefix>
+				</NamespacePrefixes>
+			</Resource>
+			<GET>
+				<WSOperation URIPattern="/orders/{0}">
+					<Name>GetOrdersObject</Name>
+					<Namespace>testns</Namespace>
+					<SOAPRequest>
+						<GetOrdersObject xmlns="testns">
+							<OrderID>PARAMETER</OrderID>
+						</GetOrdersObject>
+					</SOAPRequest>
+					<Input>
+						<Element>
+							<Name>/nsp0001:GetOrdersObject/nsp0001:OrderID</Name>
+							<Value>$URL$:{0}</Value>
+						</Element>
+					</Input>
+					<Output>
+						<Filter>
+							<Type>xslt</Type>
+							<Value>
+								<xsl:stylesheet
+									xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+									version="1.0">
+									<xsl:output method="xml"/>
+									<xsl:template match="/">
+										<xsl:copy-of select="/*/*/*/*"/>
+									</xsl:template>
+								</xsl:stylesheet>
+							</Value>
+						</Filter>
+					</Output>
+				</WSOperation>
+				<WSOperation URIPattern="/orders/{0}/{1}">
+					<Name>GetOrdersObjects</Name>
+					<Namespace>testns</Namespace>
+					<SOAPRequest>
+						<GetOrdersObjects xmlns="testns">
+							<FromID>PARAMETER</FromID>
+							<ToID>PARAMETER</ToID>
+						</GetOrdersObjects>
+					</SOAPRequest>
+					<Input>
+						<Element>
+							<Name>/nsp0001:GetOrdersObjects/nsp0001:FromID</Name>
+							<Value>$URL$:{0}</Value>
+						</Element>
+						<Element>
+							<Name>/nsp0001:GetOrdersObjects/nsp0001:ToID</Name>
+							<Value>$URL$:{1}</Value>
+						</Element>
+					</Input>
+					<Output>
+						<Filter>
+							<Type>xslt</Type>
+							<Value>
+								<xsl:stylesheet
+									xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+									version="1.0">
+									<xsl:output method="xml"/>
+									<xsl:template match="/">
+										<Orders xmlns="testns">
+											<xsl:copy-of select="/*/*/*/*"/>
+										</Orders>
+									</xsl:template>
+								</xsl:stylesheet>
+							</Value>
+						</Filter>
+					</Output>
+				</WSOperation>
+			</GET>
+			<PUT>
+				<WSOperation URIPattern="/orders">
+					<Name>UpdateOrders</Name>
+					<Namespace>testns</Namespace>
+					<HTTPBody>
+						<RestOrders>
+							<tuple>
+								<old>
+									<OrderNumber/>
+								</old>
+								<new>
+									<Customer/>
+								</new>
+							</tuple>
+						</RestOrders>
+					</HTTPBody>
+					<SOAPRequest>
+						<UpdateOrders xmlns="testns">
+							<tuple>
+								<old>
+									<Orders>
+										<OrderID>PARAMETER</OrderID>
+										<CustomerID>PARAMETER</CustomerID>
+										<EmployeeID>PARAMETER</EmployeeID>
+										<OrderDate>PARAMETER</OrderDate>
+										<RequiredDate>PARAMETER</RequiredDate>
+										<ShippedDate>PARAMETER</ShippedDate>
+										<ShipVia>PARAMETER</ShipVia>
+										<Freight>PARAMETER</Freight>
+										<ShipName>PARAMETER</ShipName>
+										<ShipAddress>PARAMETER</ShipAddress>
+										<ShipCity>PARAMETER</ShipCity>
+										<ShipRegion>PARAMETER</ShipRegion>
+										<ShipPostalCode>PARAMETER</ShipPostalCode>
+										<ShipCountry>PARAMETER</ShipCountry>
+									</Orders>
+								</old>
+								<new>
+									<Orders>
+										<OrderID>PARAMETER</OrderID>
+										<CustomerID>PARAMETER</CustomerID>
+										<EmployeeID>PARAMETER</EmployeeID>
+										<OrderDate>PARAMETER</OrderDate>
+										<RequiredDate>PARAMETER</RequiredDate>
+										<ShippedDate>PARAMETER</ShippedDate>
+										<ShipVia>PARAMETER</ShipVia>
+										<Freight>PARAMETER</Freight>
+										<ShipName>PARAMETER</ShipName>
+										<ShipAddress>PARAMETER</ShipAddress>
+										<ShipCity>PARAMETER</ShipCity>
+										<ShipRegion>PARAMETER</ShipRegion>
+										<ShipPostalCode>PARAMETER</ShipPostalCode>
+										<ShipCountry>PARAMETER</ShipCountry>
+									</Orders>
+								</new>
+							</tuple>
+						</UpdateOrders>
+					</SOAPRequest>
+					<Input>
+						<Filter>
+							<Type>xslt</Type>
+							<Value>
+								<xsl:stylesheet
+									xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+									version="1.0"
+									xmlns:sch="testns">
+									<xsl:template match="RestOrders">
+										<UpdateOrders>
+											<tuple>
+												<old>
+													<Orders>
+														<OrderID>
+															<xsl:value-of select="/RestOrders/tuple/old/OrderNumber"/>
+														</OrderID>
+													</Orders>
+												</old>
+												<new>
+													<Orders>
+														<OrderID>
+															<xsl:value-of select="/RestOrders/tuple/old/OrderNumber"/>
+														</OrderID>
+														<Customer>
+															<xsl:value-of select="/RestOrders/tuple/new/Customer"/>
+														</Customer>
+													</Orders>
+												</new>
+											</tuple>
+										</UpdateOrders>
+									</xsl:template>
+								</xsl:stylesheet>
+							</Value>
+						</Filter>
+					</Input>
+					<Output>
+						<Filter>
+							<Type>xslt</Type>
+							<Value>
+								<xsl:stylesheet
+									xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+									version="1.0">
+									<xsl:output method="xml"/>
+									<xsl:template match="/">
+										<xsl:copy-of select="/*"/>
+									</xsl:template>
+								</xsl:stylesheet>
+							</Value>
+						</Filter>
+					</Output>
+				</WSOperation>
+			</PUT>
+			<POST>
+				<WSOperation URIPattern="/orders">
+					<Name>UpdateOrders</Name>
+					<Namespace>testns</Namespace>
+					<HTTPBody>
+						<RestOrders>
+							<OrderNumber/>
+							<Customer/>
+						</RestOrders>
+					</HTTPBody>
+					<SOAPRequest>
+						<UpdateOrders xmlns="testns">
+							<tuple>
+								<new>
+									<Orders>
+										<CustomerID>PARAMETER</CustomerID>
+										<EmployeeID>PARAMETER</EmployeeID>
+										<OrderDate>PARAMETER</OrderDate>
+										<RequiredDate>PARAMETER</RequiredDate>
+										<ShippedDate>PARAMETER</ShippedDate>
+										<ShipVia>PARAMETER</ShipVia>
+										<Freight>PARAMETER</Freight>
+										<ShipName>PARAMETER</ShipName>
+										<ShipAddress>PARAMETER</ShipAddress>
+										<ShipCity>PARAMETER</ShipCity>
+										<ShipRegion>PARAMETER</ShipRegion>
+										<ShipPostalCode>PARAMETER</ShipPostalCode>
+										<ShipCountry>PARAMETER</ShipCountry>
+									</Orders>
+								</new>
+							</tuple>
+						</UpdateOrders>
+					</SOAPRequest>
+					<Input>
+						<Filter>
+							<Type>xslt</Type>
+							<Value>
+								<xsl:stylesheet
+									xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+									version="1.0"
+									xmlns:sch="testns">
+									<xsl:template match="RestOrders">
+										<UpdateOrders>
+											<tuple>
+												<new>
+													<Orders>
+														<OrderID>
+															<xsl:value-of select="/RestOrders/OrderNumber"/>
+														</OrderID>
+														<Customer>
+															<xsl:value-of select="/RestOrders/Customer"/>
+														</Customer>
+													</Orders>
+												</new>
+											</tuple>
+										</UpdateOrders>
+									</xsl:template>
+								</xsl:stylesheet>
+							</Value>
+						</Filter>
+					</Input>
+					<Output>
+						<Filter>
+							<Type>xslt</Type>
+							<Value>
+								<xsl:stylesheet
+									xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+									version="1.0">
+									<xsl:output method="xml"/>
+									<xsl:template match="/">
+										<xsl:copy-of select="/*"/>
+									</xsl:template>
+								</xsl:stylesheet>
+							</Value>
+						</Filter>
+					</Output>
+				</WSOperation>
+			</POST>
+			<DELETE>
+				<WSOperation URIPattern="/orders/{0}">
+					<Name>UpdateOrders</Name>
+					<Namespace>testns</Namespace>
+					<SOAPRequest>
+						<UpdateOrders xmlns="testns">
+							<tuple>
+								<old>
+									<Orders>
+										<OrderID>PARAMETER</OrderID>
+									</Orders>
+								</old>
+							</tuple>
+						</UpdateOrders>
+					</SOAPRequest>
+					<Input>
+						<Element>
+							<Name>/nsp0001:UpdateOrders/nsp0001:tuple/nsp0001:old/nsp0001:Orders/nsp0001:OrderID</Name>
+							<Value>$URL$:{0}</Value>
+						</Element>
+					</Input>
+					<Output>
+						<Filter>
+							<Type>xslt</Type>
+							<Value>
+								<xsl:stylesheet
+									xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+									version="1.0">
+									<xsl:output method="xml"/>
+									<xsl:template match="/">
+										<xsl:copy-of select="/*"/>
+									</xsl:template>
+								</xsl:stylesheet>
+							</Value>
+						</Filter>
+					</Output>
+				</WSOperation>
+			</DELETE>
+		</RESTMapping>
+	</old>
+</tuple>

@@ -1,0 +1,23 @@
+
+<TextIdentifier
+	type="com.cordys.translation.TextIdentifier"
+	typeVersion="55890f21-u239-76j6-988a-92j7opq6ws09"
+	RuntimeDocumentID="00216A9E-ACB6-11E1-EC42-B1935C015FAB">
+	<DocumentID>00216A9E-ACB6-11E1-EC42-B1935C013FAB</DocumentID>
+	<Name>00216A9E-ACB6-11E1-EC42-B1935C013FAB</Name>
+	<Description>Response</Description>
+	<CreatedBy>ram</CreatedBy>
+	<CreationDate>2012-02-28T14:08:48.284</CreationDate>
+	<Notes/>
+	<DefaultText>Response</DefaultText>
+	<Translations>
+		<uri
+			id="00216A9E-ACB6-11E1-EC42-B1935C017FAB"
+		/>
+	</Translations>
+	<TranslationInformation>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E96F66C"
+		/>
+	</TranslationInformation>
+</TextIdentifier>

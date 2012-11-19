@@ -1,0 +1,23 @@
+
+<TranslatedText
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.translation.TranslatedText"
+	RuntimeDocumentID="BE656D3B-D77D-11E2-E0DF-270A9C0FBFE9">
+	<DocumentID>BE656D3B-D77D-11E2-E0DF-270A9C0F9FE9</DocumentID>
+	<Name>BE656D3B-D77D-11E2-E0DF-270A9C0F9FE9</Name>
+	<Description>Activate</Description>
+	<CreatedBy>sdwivedi</CreatedBy>
+	<CreationDate>2012-09-25T10:54:53.044</CreationDate>
+	<Notes/>
+	<Text>Activate</Text>
+	<Language>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E97766C"
+		/>
+	</Language>
+	<TextIdentifier>
+		<uri
+			id="BE656D3B-D77D-11E2-E0DF-270A9C0F5FE9"
+		/>
+	</TextIdentifier>
+</TranslatedText>

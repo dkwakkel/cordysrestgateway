@@ -1,0 +1,22 @@
+
+<TranslatedText
+	type="com.cordys.translation.TranslatedText"
+	RuntimeDocumentID="00216A9E-ACB6-11E1-ECEA-00C2EBEE7FB2">
+	<DocumentID>00216A9E-ACB6-11E1-ECEA-00C2EBEE5FB2</DocumentID>
+	<Name>00216A9E-ACB6-11E1-ECEA-00C2EBEE5FB2</Name>
+	<Description>Generic ReST Client</Description>
+	<CreatedBy>ram</CreatedBy>
+	<CreationDate>2012-03-06T05:49:42.067</CreationDate>
+	<Notes/>
+	<Text>Generic ReST Client</Text>
+	<Language>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E97766C"
+		/>
+	</Language>
+	<TextIdentifier>
+		<uri
+			id="00216A9E-ACB6-11E1-ECEA-00C2EBEE1FB2"
+		/>
+	</TextIdentifier>
+</TranslatedText>

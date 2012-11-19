@@ -1,0 +1,12 @@
+<RESTFault>
+	<faultcode xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/">ns0:Server</faultcode>
+	<faultstring xml:lang="en-US">Client Error-501: Something very critical went extremely wrong</faultstring>
+	<detail>
+		<cordys:FaultDetails xmlns:cordys="http://schemas.cordys.com/General/1.0/">
+			<cordys:LocalizableMessage xmlns:cordys="http://schemas.cordys.com/General/1.0/">
+				<cordys:MessageCode xmlns:cordys="http://schemas.cordys.com/General/1.0/">Cordys.ESBServer.Messages.CriticalError</cordys:MessageCode>
+				<cordys:Insertion xmlns:cordys="http://schemas.cordys.com/General/1.0/">Something went wrong</cordys:Insertion>
+			</cordys:LocalizableMessage>
+		</cordys:FaultDetails>
+	</detail>
+</RESTFault>

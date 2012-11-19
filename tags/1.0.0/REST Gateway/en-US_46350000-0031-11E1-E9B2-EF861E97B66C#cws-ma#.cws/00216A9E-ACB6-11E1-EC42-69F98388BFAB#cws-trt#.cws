@@ -1,0 +1,22 @@
+
+<TranslatedText
+	type="com.cordys.translation.TranslatedText"
+	RuntimeDocumentID="00216A9E-ACB6-11E1-EC42-69F98388DFAB">
+	<DocumentID>00216A9E-ACB6-11E1-EC42-69F98388BFAB</DocumentID>
+	<Name>00216A9E-ACB6-11E1-EC42-69F98388BFAB</Name>
+	<Description>Button1</Description>
+	<CreatedBy>ram</CreatedBy>
+	<CreationDate>2012-02-28T14:07:09.248</CreationDate>
+	<Notes/>
+	<Text>Button1</Text>
+	<Language>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E97766C"
+		/>
+	</Language>
+	<TextIdentifier>
+		<uri
+			id="00216A9E-ACB6-11E1-EC42-69F983887FAB"
+		/>
+	</TextIdentifier>
+</TranslatedText>

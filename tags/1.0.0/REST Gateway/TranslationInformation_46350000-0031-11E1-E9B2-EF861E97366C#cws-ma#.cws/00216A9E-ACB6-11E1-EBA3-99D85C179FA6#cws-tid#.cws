@@ -1,0 +1,24 @@
+
+<TextIdentifier
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.translation.TextIdentifier"
+	typeVersion="55890f21-u239-76j6-988a-92j7opq6ws09"
+	RuntimeDocumentID="00216A9E-ACB6-11E1-EBA3-99D85C17BFA6">
+	<DocumentID>00216A9E-ACB6-11E1-EBA3-99D85C179FA6</DocumentID>
+	<Name>00216A9E-ACB6-11E1-EBA3-99D85C179FA6</Name>
+	<Description>Web Service Interface</Description>
+	<CreatedBy>ram</CreatedBy>
+	<CreationDate>2012-02-22T06:16:54.795</CreationDate>
+	<Notes/>
+	<DefaultText>Web Service Interface</DefaultText>
+	<TranslationInformation>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E96F66C"
+		/>
+	</TranslationInformation>
+	<Translations>
+		<uri
+			id="D06CA9A9-CA7F-11E1-FE67-3D2EE117B688"
+		/>
+	</Translations>
+</TextIdentifier>

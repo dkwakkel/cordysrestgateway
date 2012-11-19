@@ -1,0 +1,22 @@
+
+<TranslatedText
+	type="com.cordys.translation.TranslatedText"
+	RuntimeDocumentID="46350000-0031-11E1-EA29-DE385420167A">
+	<DocumentID>46350000-0031-11E1-EA29-DE38541FF67A</DocumentID>
+	<Name>46350000-0031-11E1-EA29-DE38541FF67A</Name>
+	<Description>SOAP Response XML</Description>
+	<CreatedBy>srajesh</CreatedBy>
+	<CreationDate>2012-02-07T05:46:50.898</CreationDate>
+	<Notes/>
+	<Text>SOAP Response XML</Text>
+	<Language>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E97766C"
+		/>
+	</Language>
+	<TextIdentifier>
+		<uri
+			id="46350000-0031-11E1-EA29-DE38541FB67A"
+		/>
+	</TextIdentifier>
+</TranslatedText>

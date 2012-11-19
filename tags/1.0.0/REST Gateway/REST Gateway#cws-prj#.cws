@@ -1,0 +1,131 @@
+
+<Project
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.cws.documenttypes.project.Project"
+	typeVersion="0019B980-5ADC-71DF-9C5A-1C9DE0779704"
+	RuntimeDocumentID="46350000-0031-11E1-E9B2-EF861E96D66C">
+	<DocumentID>46350000-0031-11E1-E9B2-EF861E96B66C</DocumentID>
+	<Name>REST Gateway</Name>
+	<Description>REST Gateway</Description>
+	<CreatedBy>srajesh</CreatedBy>
+	<CreationDate>2012-02-02T12:14:53.165</CreationDate>
+	<Notes/>
+	<NamespacePrefix></NamespacePrefix>
+	<ISVPackageInfo>
+		<ISVPackageInfo
+			type="com.cordys.cws.packaging.isvp.ISVPackageInfo"
+			typeVersion="00215A62-2E6A-11E1-FCAC-F71EBE253749"
+			RuntimeDocumentID="46350000-0031-11E1-E9B2-EF861E98566C">
+			<DocumentID>46350000-0031-11E1-E9B2-EF861E98366C</DocumentID>
+			<Name>REST Gateway</Name>
+			<Description>REST Gateway</Description>
+			<CreatedBy>srajesh</CreatedBy>
+			<CreationDate>2012-02-02T12:14:53.165</CreationDate>
+			<Notes/>
+			<BuildNumber>0</BuildNumber>
+			<ISVPackageFileName>REST Gateway 1.0.0</ISVPackageFileName>
+			<ISVPackageOwner>Open source community</ISVPackageOwner>
+			<PackageForRuntime>true</PackageForRuntime>
+			<PostISVLoaderInformation/>
+			<Product>REST Provider</Product>
+			<SupportedDeploymentSpaces
+				xmlns:cws="http://schemas.cordys.com/cws/1.0"
+				cws:type="collection">
+				<cws:item>SYSTEM</cws:item>
+			</SupportedDeploymentSpaces>
+			<Version>1.0</Version>
+			<LicenseAgreement>
+				<ISVPLegalText
+					type="com.cordys.cws.packaging.isvp.ISVPLegalText"
+					RuntimeDocumentID="D6025F88-8CBB-11E1-F889-61F24FCD322B">
+					<DocumentID>D6025F88-8CBB-11E1-F889-61F24FCD122B</DocumentID>
+					<Name>Untitled ISVP Legal Text</Name>
+					<Description>Untitled ISVP Legal Text</Description>
+					<CreatedBy>gjansen</CreatedBy>
+					<CreationDate>2012-07-02T13:45:09.887</CreationDate>
+					<Notes/>
+					<AgreementText>
+						<TextLegalText
+							type="com.cordys.cws.packaging.isvp.TextLegalText"
+							RuntimeDocumentID="D6025F88-8CBB-11E1-F889-61F24FCCD22B">
+							<DocumentID>D6025F88-8CBB-11E1-F889-61F24FCCB22B</DocumentID>
+							<Name>Untitled Legal Text in Txt</Name>
+							<Description>Untitled Legal Text in Txt</Description>
+							<CreatedBy>gjansen</CreatedBy>
+							<CreationDate>2012-07-02T13:45:09.888</CreationDate>
+							<Notes/>
+							<LegalTextInText>
+								<uri
+									id="E136A398-2E7A-11E1-FD83-9AB4ABB57FE0"
+									path="REST Gateway/Cordys install dir/Apache License 2.0.txt"
+									type="com.cordys.external.document.Text"
+								/>
+							</LegalTextInText>
+						</TextLegalText>
+					</AgreementText>
+				</ISVPLegalText>
+			</LicenseAgreement>
+			<ThirdPartyAgreement/>
+		</ISVPackageInfo>
+	</ISVPackageInfo>
+	<RuntimeQualifiedName/>
+	<SourceFolder>
+		<uri
+			id="E136A398-2E7A-11E1-FD83-9AB4AB2C1FE0"
+			path="REST Gateway"
+			type="com.cordys.cws.runtime.types.folder.StudioFolder"
+		/>
+	</SourceFolder>
+	<_AddOns>
+		<TranslationInformation
+			type="com.cordys.translation.TranslationInformation"
+			typeVersion="b81bb9b4-8af7-470f-a5fa-864be49acb9d"
+			RuntimeDocumentID="46350000-0031-11E1-E9B2-EF861E97166C">
+			<DocumentID>46350000-0031-11E1-E9B2-EF861E96F66C</DocumentID>
+			<Name>TranslationInformation</Name>
+			<Description/>
+			<CreatedBy>srajesh</CreatedBy>
+			<CreationDate>2012-02-02T12:14:53.165</CreationDate>
+			<Notes/>
+			<LanguagePacks>
+				<LanguagePack
+					type="com.cordys.translation.LanguagePack"
+					typeVersion="11456b87-q895-32f2-584q-58f3tlm2so65"
+					RuntimeDocumentID="46350000-0031-11E1-E9B2-EF861E97966C">
+					<DocumentID>46350000-0031-11E1-E9B2-EF861E97766C</DocumentID>
+					<Name>en-US</Name>
+					<Description/>
+					<CreatedBy>srajesh</CreatedBy>
+					<CreationDate>2012-02-02T12:14:53.165</CreationDate>
+					<Notes/>
+					<Language>English - United States</Language>
+					<Texts>
+						<uri
+							id="46350000-0031-11E1-E9B2-EF861E97B66C"
+							path="REST Gateway/en-US_46350000-0031-11E1-E9B2-EF861E97B66C"
+							type="com.cordys.cws.associations.MergeableAssociation"
+						/>
+					</Texts>
+					<TranslationInformation>
+						<uri
+							id="46350000-0031-11E1-E9B2-EF861E96F66C"
+						/>
+					</TranslationInformation>
+				</LanguagePack>
+			</LanguagePacks>
+			<ProjectLanguage>
+				<uri
+					id="46350000-0031-11E1-E9B2-EF861E97766C"
+				/>
+			</ProjectLanguage>
+			<Texts>
+				<uri
+					id="46350000-0031-11E1-E9B2-EF861E97366C"
+					path="REST Gateway/TranslationInformation_46350000-0031-11E1-E9B2-EF861E97366C"
+					type="com.cordys.cws.associations.MergeableAssociation"
+				/>
+			</Texts>
+			<TranslationInformation/>
+		</TranslationInformation>
+	</_AddOns>
+</Project>

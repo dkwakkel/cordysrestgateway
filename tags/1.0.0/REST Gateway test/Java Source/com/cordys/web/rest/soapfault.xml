@@ -1,0 +1,24 @@
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Header xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+		<header
+			xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/"
+			xmlns="http://schemas.cordys.com/General/1.0/">
+			<msg-id>D6025F88-8CBB-11E1-F8BD-39613C47F22B</msg-id>
+		</header>
+	</SOAP:Header>
+	<SOAP:Body>
+		<SOAP:Fault>
+			<faultcode xmlns:ns0="http://schemas.xmlsoap.org/soap/envelope/">ns0:Server</faultcode>
+			<faultstring xml:lang="en-US">Client Error-501: Something very critical went extremely wrong</faultstring>
+			<faultactor>Don't blame me</faultactor>
+			<detail>
+				<cordys:FaultDetails xmlns:cordys="http://schemas.cordys.com/General/1.0/">
+					<cordys:LocalizableMessage xmlns:cordys="http://schemas.cordys.com/General/1.0/">
+						<cordys:MessageCode xmlns:cordys="http://schemas.cordys.com/General/1.0/">Cordys.ESBServer.Messages.CriticalError</cordys:MessageCode>
+						<cordys:Insertion xmlns:cordys="http://schemas.cordys.com/General/1.0/">Something went wrong</cordys:Insertion>
+					</cordys:LocalizableMessage>
+				</cordys:FaultDetails>
+			</detail>
+		</SOAP:Fault>
+	</SOAP:Body>
+</SOAP:Envelope>

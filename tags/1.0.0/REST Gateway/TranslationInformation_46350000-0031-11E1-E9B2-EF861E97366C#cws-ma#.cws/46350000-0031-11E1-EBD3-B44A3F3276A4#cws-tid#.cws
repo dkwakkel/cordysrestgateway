@@ -1,0 +1,23 @@
+
+<TextIdentifier
+	type="com.cordys.translation.TextIdentifier"
+	typeVersion="55890f21-u239-76j6-988a-92j7opq6ws09"
+	RuntimeDocumentID="46350000-0031-11E1-EBD3-B44A3F3296A4">
+	<DocumentID>46350000-0031-11E1-EBD3-B44A3F3276A4</DocumentID>
+	<Name>46350000-0031-11E1-EBD3-B44A3F3276A4</Name>
+	<Description>Response Body</Description>
+	<CreatedBy>srajesh</CreatedBy>
+	<CreationDate>2012-02-24T06:33:37.662</CreationDate>
+	<Notes/>
+	<DefaultText>Response Body</DefaultText>
+	<Translations>
+		<uri
+			id="46350000-0031-11E1-EBD3-B44A3F32B6A4"
+		/>
+	</Translations>
+	<TranslationInformation>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E96F66C"
+		/>
+	</TranslationInformation>
+</TextIdentifier>

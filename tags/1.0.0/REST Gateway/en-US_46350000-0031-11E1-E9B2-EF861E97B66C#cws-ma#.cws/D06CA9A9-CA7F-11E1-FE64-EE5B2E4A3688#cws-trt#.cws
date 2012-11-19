@@ -1,0 +1,23 @@
+
+<TranslatedText
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.translation.TranslatedText"
+	RuntimeDocumentID="D06CA9A9-CA7F-11E1-FE64-EE5B2E4A5688">
+	<DocumentID>D06CA9A9-CA7F-11E1-FE64-EE5B2E4A3688</DocumentID>
+	<Name>D06CA9A9-CA7F-11E1-FE64-EE5B2E4A3688</Name>
+	<Description>Could not find any Service.</Description>
+	<CreatedBy>sdwivedi</CreatedBy>
+	<CreationDate>2012-08-31T05:06:45.312</CreationDate>
+	<Notes/>
+	<Text>Could not find any Service.</Text>
+	<Language>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E97766C"
+		/>
+	</Language>
+	<TextIdentifier>
+		<uri
+			id="D06CA9A9-CA7F-11E1-FE64-EE5B2E49F688"
+		/>
+	</TextIdentifier>
+</TranslatedText>

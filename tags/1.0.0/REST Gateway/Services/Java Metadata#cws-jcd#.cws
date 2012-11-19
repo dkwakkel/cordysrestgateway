@@ -1,0 +1,267 @@
+
+<JavaCallDefinition
+	xmlns=""
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.javacall.JavaCallDefinition"
+	RuntimeDocumentID="00216A9E-ACB6-11E1-EB92-2130C41ABFA5">
+	<DocumentID>00216A9E-ACB6-11E1-EB92-2130C41A9FA5</DocumentID>
+	<Name>Java Metadata</Name>
+	<Description>Java Metadata</Description>
+	<CreatedBy>ram</CreatedBy>
+	<CreationDate>2012-02-21T14:43:52.052</CreationDate>
+	<Notes/>
+	<FullClassNames></FullClassNames>
+	<JarFileList>C:\Cordys\bop4\BOP4CU71\RESTGateway.jar</JarFileList>
+	<Classes/>
+	<JavaArchives>
+		<JavaArchive
+			type="com.cordys.javacall.JavaArchive"
+			RuntimeDocumentID="D6025F88-8CBB-11E1-F889-B3E7EDB5522B">
+			<DocumentID>D6025F88-8CBB-11E1-F889-B3E7EDB5322B</DocumentID>
+			<Name>RESTGateway.jar</Name>
+			<Description/>
+			<CreatedBy>gjansen</CreatedBy>
+			<CreationDate>2012-07-02T13:55:47.343</CreationDate>
+			<Notes/>
+			<ArchiveLastModifiedDate>1340889093554</ArchiveLastModifiedDate>
+			<ArchivePath>C:/Cordys/bop4/BOP4CU71/RESTGateway.jar</ArchivePath>
+			<Classes/>
+			<JavaCallDefinition>
+				<uri
+					id="00216A9E-ACB6-11E1-EB92-2130C41A9FA5"
+				/>
+			</JavaCallDefinition>
+			<Packages>
+				<JavaPackage
+					type="com.cordys.javacall.JavaPackage"
+					RuntimeDocumentID="D6025F88-8CBB-11E1-F889-B3E7EDB5922B">
+					<DocumentID>D6025F88-8CBB-11E1-F889-B3E7EDB5722B</DocumentID>
+					<Name>com</Name>
+					<Description>com</Description>
+					<CreatedBy>gjansen</CreatedBy>
+					<CreationDate>2012-07-02T13:55:47.342</CreationDate>
+					<Notes/>
+					<Classes/>
+					<JavaArchive>
+						<uri
+							id="D6025F88-8CBB-11E1-F889-B3E7EDB5322B"
+						/>
+					</JavaArchive>
+					<Packages>
+						<JavaPackage
+							type="com.cordys.javacall.JavaPackage"
+							RuntimeDocumentID="D6025F88-8CBB-11E1-F889-B3E7EDB5D22B">
+							<DocumentID>D6025F88-8CBB-11E1-F889-B3E7EDB5B22B</DocumentID>
+							<Name>cordys</Name>
+							<Description>cordys</Description>
+							<CreatedBy>gjansen</CreatedBy>
+							<CreationDate>2012-07-02T13:55:47.342</CreationDate>
+							<Notes/>
+							<Classes/>
+							<JavaArchive/>
+							<Packages>
+								<JavaPackage
+									type="com.cordys.javacall.JavaPackage"
+									RuntimeDocumentID="D6025F88-8CBB-11E1-F889-B3E7EDB6122B">
+									<DocumentID>D6025F88-8CBB-11E1-F889-B3E7EDB5F22B</DocumentID>
+									<Name>web</Name>
+									<Description>web</Description>
+									<CreatedBy>gjansen</CreatedBy>
+									<CreationDate>2012-07-02T13:55:47.341</CreationDate>
+									<Notes/>
+									<Classes/>
+									<JavaArchive/>
+									<Packages>
+										<JavaPackage
+											type="com.cordys.javacall.JavaPackage"
+											RuntimeDocumentID="D6025F88-8CBB-11E1-F889-B3E7EDB6522B">
+											<DocumentID>D6025F88-8CBB-11E1-F889-B3E7EDB6322B</DocumentID>
+											<Name>rest</Name>
+											<Description>rest</Description>
+											<CreatedBy>gjansen</CreatedBy>
+											<CreationDate>2012-07-02T13:55:47.344</CreationDate>
+											<Notes/>
+											<Classes>
+												<JavaClass
+													type="com.cordys.javacall.JavaClass"
+													RuntimeDocumentID="D6025F88-8CBB-11E1-F889-B3E7EDB6922B">
+													<DocumentID>D6025F88-8CBB-11E1-F889-B3E7EDB6722B</DocumentID>
+													<Name>GenerateServiceMappings</Name>
+													<Description>GenerateServiceMappings</Description>
+													<CreatedBy>gjansen</CreatedBy>
+													<CreationDate>2012-07-02T13:55:47.342</CreationDate>
+													<Notes/>
+													<fullyQualifiedName>com.cordys.web.rest.GenerateServiceMappings</fullyQualifiedName>
+													<JavaArchive>
+														<uri	id="D6025F88-8CBB-11E1-F889-B3E7EDB5322B"
+														/>
+													</JavaArchive>
+													<JavaCallDefinition/>
+													<JavaMethods>
+														<JavaMethod	type="com.cordys.javacall.JavaMethod"	RuntimeDocumentID="D6025F88-8CBB-11E1-F889-B7178DDFF22B">	<DocumentID>D6025F88-8CBB-11E1-F889-B7178DDFD22B</DocumentID>	<Name>generateServiceMappings</Name>	<Description>generateServiceMappings</Description>	<CreatedBy>gjansen</CreatedBy>	<CreationDate>2012-07-02T13:56:35.379</CreationDate>	<Notes/>	<JavaCallRealization/>	<JavaClass>
+		<uri
+				id="D6025F88-8CBB-11E1-F889-B3E7EDB6722B"
+		/>	</JavaClass>
+														</JavaMethod>
+													</JavaMethods>
+													<JavaPackage>
+														<uri	id="D6025F88-8CBB-11E1-F889-B3E7EDB6322B"
+														/>
+													</JavaPackage>
+												</JavaClass>
+												<JavaClass
+													type="com.cordys.javacall.JavaClass"
+													RuntimeDocumentID="D6025F88-8CBB-11E1-F889-B3E7EDB6D22B">
+													<DocumentID>D6025F88-8CBB-11E1-F889-B3E7EDB6B22B</DocumentID>
+													<Name>GenerateServiceMappingsException</Name>
+													<Description>GenerateServiceMappingsException</Description>
+													<CreatedBy>gjansen</CreatedBy>
+													<CreationDate>2012-07-02T13:55:47.344</CreationDate>
+													<Notes/>
+													<fullyQualifiedName>com.cordys.web.rest.GenerateServiceMappingsException</fullyQualifiedName>
+													<JavaArchive>
+														<uri	id="D6025F88-8CBB-11E1-F889-B3E7EDB5322B"
+														/>
+													</JavaArchive>
+													<JavaCallDefinition/>
+													<JavaMethods/>
+													<JavaPackage>
+														<uri	id="D6025F88-8CBB-11E1-F889-B3E7EDB6322B"
+														/>
+													</JavaPackage>
+												</JavaClass>
+												<JavaClass
+													type="com.cordys.javacall.JavaClass"
+													RuntimeDocumentID="D6025F88-8CBB-11E1-F889-B3E7EDB7122B">
+													<DocumentID>D6025F88-8CBB-11E1-F889-B3E7EDB6F22B</DocumentID>
+													<Name>RESTGateway</Name>
+													<Description>RESTGateway</Description>
+													<CreatedBy>gjansen</CreatedBy>
+													<CreationDate>2012-07-02T13:55:47.341</CreationDate>
+													<Notes/>
+													<fullyQualifiedName>com.cordys.web.rest.RESTGateway</fullyQualifiedName>
+													<JavaArchive>
+														<uri	id="D6025F88-8CBB-11E1-F889-B3E7EDB5322B"
+														/>
+													</JavaArchive>
+													<JavaCallDefinition/>
+													<JavaMethods/>
+													<JavaPackage>
+														<uri	id="D6025F88-8CBB-11E1-F889-B3E7EDB6322B"
+														/>
+													</JavaPackage>
+												</JavaClass>
+												<JavaClass
+													type="com.cordys.javacall.JavaClass"
+													RuntimeDocumentID="D6025F88-8CBB-11E1-F889-B3E7EDB7522B">
+													<DocumentID>D6025F88-8CBB-11E1-F889-B3E7EDB7322B</DocumentID>
+													<Name>RESTGatewayException</Name>
+													<Description>RESTGatewayException</Description>
+													<CreatedBy>gjansen</CreatedBy>
+													<CreationDate>2012-07-02T13:55:47.343</CreationDate>
+													<Notes/>
+													<fullyQualifiedName>com.cordys.web.rest.RESTGatewayException</fullyQualifiedName>
+													<JavaArchive>
+														<uri	id="D6025F88-8CBB-11E1-F889-B3E7EDB5322B"
+														/>
+													</JavaArchive>
+													<JavaCallDefinition/>
+													<JavaMethods/>
+													<JavaPackage>
+														<uri	id="D6025F88-8CBB-11E1-F889-B3E7EDB6322B"
+														/>
+													</JavaPackage>
+												</JavaClass>
+												<JavaClass
+													type="com.cordys.javacall.JavaClass"
+													RuntimeDocumentID="D6025F88-8CBB-11E1-F889-B3E7EDB7922B">
+													<DocumentID>D6025F88-8CBB-11E1-F889-B3E7EDB7722B</DocumentID>
+													<Name>RESTGatewayMessages</Name>
+													<Description>RESTGatewayMessages</Description>
+													<CreatedBy>gjansen</CreatedBy>
+													<CreationDate>2012-07-02T13:55:47.344</CreationDate>
+													<Notes/>
+													<fullyQualifiedName>com.cordys.web.rest.RESTGatewayMessages</fullyQualifiedName>
+													<JavaArchive>
+														<uri	id="D6025F88-8CBB-11E1-F889-B3E7EDB5322B"
+														/>
+													</JavaArchive>
+													<JavaCallDefinition/>
+													<JavaMethods/>
+													<JavaPackage>
+														<uri	id="D6025F88-8CBB-11E1-F889-B3E7EDB6322B"
+														/>
+													</JavaPackage>
+												</JavaClass>
+												<JavaClass
+													type="com.cordys.javacall.JavaClass"
+													RuntimeDocumentID="D6025F88-8CBB-11E1-F889-B3E7EDB7D22B">
+													<DocumentID>D6025F88-8CBB-11E1-F889-B3E7EDB7B22B</DocumentID>
+													<Name>RESTMapping</Name>
+													<Description>RESTMapping</Description>
+													<CreatedBy>gjansen</CreatedBy>
+													<CreationDate>2012-07-02T13:55:47.342</CreationDate>
+													<Notes/>
+													<fullyQualifiedName>com.cordys.web.rest.RESTMapping</fullyQualifiedName>
+													<JavaArchive>
+														<uri	id="D6025F88-8CBB-11E1-F889-B3E7EDB5322B"
+														/>
+													</JavaArchive>
+													<JavaCallDefinition/>
+													<JavaMethods>
+														<JavaMethod	type="com.cordys.javacall.JavaMethod"	RuntimeDocumentID="D6025F88-8CBB-11E1-F889-BA30B0A3922B">	<DocumentID>D6025F88-8CBB-11E1-F889-BA30B0A3722B</DocumentID>	<Name>generateKey</Name>	<Description>generateKey</Description>	<CreatedBy>gjansen</CreatedBy>	<CreationDate>2012-07-02T13:57:18.888</CreationDate>	<Notes/>	<JavaCallRealization/>	<JavaClass>
+		<uri
+				id="D6025F88-8CBB-11E1-F889-B3E7EDB7B22B"
+		/>	</JavaClass>
+														</JavaMethod>
+														<JavaMethod	type="com.cordys.javacall.JavaMethod"	RuntimeDocumentID="D6025F88-8CBB-11E1-F889-BA30B0A3D22B">	<DocumentID>D6025F88-8CBB-11E1-F889-BA30B0A3B22B</DocumentID>	<Name>generateAndGetTheServiceRESTMapping</Name>	<Description>generateAndGetTheServiceRESTMapping</Description>	<CreatedBy>gjansen</CreatedBy>	<CreationDate>2012-07-02T13:57:18.888</CreationDate>	<Notes/>	<JavaCallRealization/>	<JavaClass>
+		<uri
+				id="D6025F88-8CBB-11E1-F889-B3E7EDB7B22B"
+		/>	</JavaClass>
+														</JavaMethod>
+														<JavaMethod	type="com.cordys.javacall.JavaMethod"	RuntimeDocumentID="D6025F88-8CBB-11E1-F889-BA30B0A4122B">	<DocumentID>D6025F88-8CBB-11E1-F889-BA30B0A3F22B</DocumentID>	<Name>generateUniqueHash</Name>	<Description>generateUniqueHash</Description>	<CreatedBy>gjansen</CreatedBy>	<CreationDate>2012-07-02T13:57:18.888</CreationDate>	<Notes/>	<JavaCallRealization/>	<JavaClass>
+		<uri
+				id="D6025F88-8CBB-11E1-F889-B3E7EDB7B22B"
+		/>	</JavaClass>
+														</JavaMethod>
+													</JavaMethods>
+													<JavaPackage>
+														<uri	id="D6025F88-8CBB-11E1-F889-B3E7EDB6322B"
+														/>
+													</JavaPackage>
+												</JavaClass>
+												<JavaClass
+													type="com.cordys.javacall.JavaClass"
+													RuntimeDocumentID="D6025F88-8CBB-11E1-F889-B3E7EDB8122B">
+													<DocumentID>D6025F88-8CBB-11E1-F889-B3E7EDB7F22B</DocumentID>
+													<Name>ServiceMapping</Name>
+													<Description>ServiceMapping</Description>
+													<CreatedBy>gjansen</CreatedBy>
+													<CreationDate>2012-07-02T13:55:47.341</CreationDate>
+													<Notes/>
+													<fullyQualifiedName>com.cordys.web.rest.ServiceMapping</fullyQualifiedName>
+													<JavaArchive>
+														<uri	id="D6025F88-8CBB-11E1-F889-B3E7EDB5322B"
+														/>
+													</JavaArchive>
+													<JavaCallDefinition/>
+													<JavaMethods/>
+													<JavaPackage>
+														<uri	id="D6025F88-8CBB-11E1-F889-B3E7EDB6322B"
+														/>
+													</JavaPackage>
+												</JavaClass>
+											</Classes>
+											<JavaArchive/>
+											<Packages/>
+										</JavaPackage>
+									</Packages>
+								</JavaPackage>
+							</Packages>
+						</JavaPackage>
+					</Packages>
+				</JavaPackage>
+			</Packages>
+		</JavaArchive>
+	</JavaArchives>
+</JavaCallDefinition>

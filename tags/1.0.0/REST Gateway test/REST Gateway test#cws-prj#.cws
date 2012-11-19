@@ -1,0 +1,131 @@
+
+<Project
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.cws.documenttypes.project.Project"
+	typeVersion="0019B980-5ADC-71DF-9C5A-1C9DE0779704"
+	RuntimeDocumentID="D6025F88-8CBB-11E1-F889-61F24FD1922B">
+	<DocumentID>D6025F88-8CBB-11E1-F889-61F24FD1722B</DocumentID>
+	<Name>REST Gateway test</Name>
+	<Description>REST Gateway test</Description>
+	<CreatedBy>gjansen</CreatedBy>
+	<CreationDate>2012-07-02T13:42:26.109</CreationDate>
+	<Notes/>
+	<NamespacePrefix></NamespacePrefix>
+	<ISVPackageInfo>
+		<ISVPackageInfo
+			type="com.cordys.cws.packaging.isvp.ISVPackageInfo"
+			typeVersion="00215A62-2E6A-11E1-FCAC-F71EBE253749"
+			RuntimeDocumentID="D6025F88-8CBB-11E1-F889-61F24FD0D22B">
+			<DocumentID>D6025F88-8CBB-11E1-F889-61F24FD0B22B</DocumentID>
+			<Name>REST Gateway test</Name>
+			<Description>REST Gateway test</Description>
+			<CreatedBy>gjansen</CreatedBy>
+			<CreationDate>2012-07-02T13:42:26.11</CreationDate>
+			<Notes/>
+			<BuildNumber>0</BuildNumber>
+			<ISVPackageFileName>REST Gateway test 1.0.0</ISVPackageFileName>
+			<ISVPackageOwner>Open source community</ISVPackageOwner>
+			<PackageForRuntime>true</PackageForRuntime>
+			<PostISVLoaderInformation/>
+			<Product>REST Gateway test</Product>
+			<SupportedDeploymentSpaces
+				xmlns:cws="http://schemas.cordys.com/cws/1.0"
+				cws:type="collection">
+				<cws:item>SYSTEM</cws:item>
+			</SupportedDeploymentSpaces>
+			<Version>1.0</Version>
+			<LicenseAgreement>
+				<ISVPLegalText
+					type="com.cordys.cws.packaging.isvp.ISVPLegalText"
+					RuntimeDocumentID="D6025F88-8CBB-11E1-F889-61F24FCA922B">
+					<DocumentID>D6025F88-8CBB-11E1-F889-61F24FCA722B</DocumentID>
+					<Name>Untitled ISVP Legal Text</Name>
+					<Description>Untitled ISVP Legal Text</Description>
+					<CreatedBy>gjansen</CreatedBy>
+					<CreationDate>2012-07-02T13:50:30.012</CreationDate>
+					<Notes/>
+					<AgreementText>
+						<TextLegalText
+							type="com.cordys.cws.packaging.isvp.TextLegalText"
+							RuntimeDocumentID="D6025F88-8CBB-11E1-F889-61F24FCA322B">
+							<DocumentID>D6025F88-8CBB-11E1-F889-9BA28ED5122B</DocumentID>
+							<Name>Untitled Legal Text in Txt</Name>
+							<Description>Untitled Legal Text in Txt</Description>
+							<CreatedBy>gjansen</CreatedBy>
+							<CreationDate>2012-07-02T13:50:30.013</CreationDate>
+							<Notes/>
+							<LegalTextInText>
+								<uri
+									id="E136A398-2E7A-11E1-FD83-9AB4ABB57FE0"
+									path="REST Gateway/Cordys install dir/Apache License 2.0.txt"
+									type="com.cordys.external.document.Text"
+								/>
+							</LegalTextInText>
+						</TextLegalText>
+					</AgreementText>
+				</ISVPLegalText>
+			</LicenseAgreement>
+			<ThirdPartyAgreement/>
+		</ISVPackageInfo>
+	</ISVPackageInfo>
+	<RuntimeQualifiedName/>
+	<SourceFolder>
+		<uri
+			id="E136A398-2E7A-11E1-FD83-9AB4AB1E3FE0"
+			path="REST Gateway test"
+			type="com.cordys.cws.runtime.types.folder.StudioFolder"
+		/>
+	</SourceFolder>
+	<_AddOns>
+		<TranslationInformation
+			type="com.cordys.translation.TranslationInformation"
+			typeVersion="b81bb9b4-8af7-470f-a5fa-864be49acb9d"
+			RuntimeDocumentID="D6025F88-8CBB-11E1-F889-61F24FD0922B">
+			<DocumentID>D6025F88-8CBB-11E1-F889-61F24FD0722B</DocumentID>
+			<Name>TranslationInformation</Name>
+			<Description>TranslationInformation</Description>
+			<CreatedBy>gjansen</CreatedBy>
+			<CreationDate>2012-07-02T13:42:26.109</CreationDate>
+			<Notes/>
+			<LanguagePacks>
+				<LanguagePack
+					type="com.cordys.translation.LanguagePack"
+					typeVersion="11456b87-q895-32f2-584q-58f3tlm2so65"
+					RuntimeDocumentID="D6025F88-8CBB-11E1-F889-61F24FD0122B">
+					<DocumentID>D6025F88-8CBB-11E1-F889-61F24FCFF22B</DocumentID>
+					<Name>en-US</Name>
+					<Description>en-US</Description>
+					<CreatedBy>gjansen</CreatedBy>
+					<CreationDate>2012-07-02T13:42:26.109</CreationDate>
+					<Notes/>
+					<Language>English - United States</Language>
+					<Texts>
+						<uri
+							id="D6025F88-8CBB-11E1-F889-61F24FCFB22B"
+							path="REST Gateway test/en-US_D6025F88-8CBB-11E1-F889-61F24FCFB22B"
+							type="com.cordys.cws.associations.MergeableAssociation"
+						/>
+					</Texts>
+					<TranslationInformation>
+						<uri
+							id="D6025F88-8CBB-11E1-F889-61F24FD0722B"
+						/>
+					</TranslationInformation>
+				</LanguagePack>
+			</LanguagePacks>
+			<ProjectLanguage>
+				<uri
+					id="D6025F88-8CBB-11E1-F889-61F24FCFF22B"
+				/>
+			</ProjectLanguage>
+			<Texts>
+				<uri
+					id="D6025F88-8CBB-11E1-F889-61F24FD0322B"
+					path="REST Gateway test/TranslationInformation_D6025F88-8CBB-11E1-F889-61F24FD0322B"
+					type="com.cordys.cws.associations.MergeableAssociation"
+				/>
+			</Texts>
+			<TranslationInformation/>
+		</TranslationInformation>
+	</_AddOns>
+</Project>

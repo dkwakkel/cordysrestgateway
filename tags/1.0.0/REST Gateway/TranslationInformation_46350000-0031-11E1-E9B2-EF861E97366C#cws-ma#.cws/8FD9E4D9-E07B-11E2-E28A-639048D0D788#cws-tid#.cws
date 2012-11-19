@@ -1,0 +1,24 @@
+
+<TextIdentifier
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.translation.TextIdentifier"
+	typeVersion="55890f21-u239-76j6-988a-92j7opq6ws09"
+	RuntimeDocumentID="8FD9E4D9-E07B-11E2-E28A-639048D0F788">
+	<DocumentID>8FD9E4D9-E07B-11E2-E28A-639048D0D788</DocumentID>
+	<Name>8FD9E4D9-E07B-11E2-E28A-639048D0D788</Name>
+	<Description>invalidMapping</Description>
+	<CreatedBy>sdwivedi</CreatedBy>
+	<CreationDate>2012-10-12T10:31:58.189</CreationDate>
+	<Notes/>
+	<DefaultText>invalidMapping</DefaultText>
+	<TranslationInformation>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E96F66C"
+		/>
+	</TranslationInformation>
+	<Translations>
+		<uri
+			id="8FD9E4D9-E07B-11E2-E28A-639048D11788"
+		/>
+	</Translations>
+</TextIdentifier>

@@ -1,0 +1,23 @@
+
+<TranslatedText
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.translation.TranslatedText"
+	RuntimeDocumentID="D06CA9A9-CA7F-11E1-FE64-EE5B2E47B688">
+	<DocumentID>D06CA9A9-CA7F-11E1-FE64-EE5B2E479688</DocumentID>
+	<Name>D06CA9A9-CA7F-11E1-FE64-EE5B2E479688</Name>
+	<Description>Web Service Operation SOAP Request is not a valid XML. Please verify.</Description>
+	<CreatedBy>sdwivedi</CreatedBy>
+	<CreationDate>2012-08-31T05:11:11.253</CreationDate>
+	<Notes/>
+	<Text>Web Service Operation SOAP Request is not a valid XML. Please verify.</Text>
+	<Language>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E97766C"
+		/>
+	</Language>
+	<TextIdentifier>
+		<uri
+			id="D06CA9A9-CA7F-11E1-FE64-EE5B2E475688"
+		/>
+	</TextIdentifier>
+</TranslatedText>

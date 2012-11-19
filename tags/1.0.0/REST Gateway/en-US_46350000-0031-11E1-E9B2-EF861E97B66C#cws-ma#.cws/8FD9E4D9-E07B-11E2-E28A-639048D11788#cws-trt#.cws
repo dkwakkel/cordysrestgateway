@@ -1,0 +1,23 @@
+
+<TranslatedText
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.translation.TranslatedText"
+	RuntimeDocumentID="8FD9E4D9-E07B-11E2-E28A-639048D13788">
+	<DocumentID>8FD9E4D9-E07B-11E2-E28A-639048D11788</DocumentID>
+	<Name>8FD9E4D9-E07B-11E2-E28A-639048D11788</Name>
+	<Description>Invalid Mapping, Save this mapping again using Generate REST Services UI</Description>
+	<CreatedBy>sdwivedi</CreatedBy>
+	<CreationDate>2012-10-12T10:31:58.19</CreationDate>
+	<Notes/>
+	<Text>Invalid Mapping, Save this mapping again using Generate REST Services UI</Text>
+	<Language>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E97766C"
+		/>
+	</Language>
+	<TextIdentifier>
+		<uri
+			id="8FD9E4D9-E07B-11E2-E28A-639048D0D788"
+		/>
+	</TextIdentifier>
+</TranslatedText>

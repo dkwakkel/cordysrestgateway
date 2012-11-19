@@ -1,0 +1,20 @@
+
+<QualifiedNameRoot
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.cws.namespace.qualifiedname.QualifiedNameRoot"
+	RuntimeDocumentID="D6025F88-8CBB-11E1-F88A-89D4F22CF22B">
+	<DocumentID>D6025F88-8CBB-11E1-F88A-89D4F22CD22B</DocumentID>
+	<Name>runtimeQNR for folder</Name>
+	<Description>runtimeQNR for folder</Description>
+	<CreatedBy>gjansen</CreatedBy>
+	<CreationDate>2012-07-02T14:58:21.221</CreationDate>
+	<Notes/>
+	<DesigntimeQNRFolder/>
+	<RuntimeQNRFolder>
+		<uri
+			id="E136A398-2E7A-11E1-FD83-9AB4AB2BBFE0"
+			path="REST Gateway test/Cordys install dir"
+			type="com.cordys.cws.runtime.types.folder.StudioFolder"
+		/>
+	</RuntimeQNRFolder>
+</QualifiedNameRoot>

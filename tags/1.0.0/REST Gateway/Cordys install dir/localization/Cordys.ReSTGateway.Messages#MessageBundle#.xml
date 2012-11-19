@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MessageBundle xmlns:c="http://schemas.cordys.com/cws/1.0" xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/" id="Cordys.ReSTGateway.Messages">
+    <Message id="RestGatewayBadRequest">
+        <MessageText>Bad Request. Error Message : {0}</MessageText>
+        <Description/>
+        <Annotations>
+            <DocumentationURL/>
+        </Annotations>
+    </Message>
+    <Message id="RestResourceNotFound">
+        <MessageText>Resource Not Found. Error Message : {0}</MessageText>
+        <Description/>
+        <Annotations>
+            <DocumentationURL/>
+        </Annotations>
+    </Message>
+    <Message id="RestGatewayInternalServerError">
+        <MessageText>Internal Server Error. Error Message : {0}</MessageText>
+        <Description/>
+        <Annotations>
+            <DocumentationURL/>
+        </Annotations>
+    </Message>
+    <Message id="RestGatewayRequest">
+        <MessageText>REST Request received is : {0}</MessageText>
+        <Description/>
+        <Annotations>
+            <DocumentationURL/>
+        </Annotations>
+    </Message>
+    <Message id="RestGatewaySOAPRequest">
+        <MessageText>SOAP Request created for REST URI {0} is : {1}</MessageText>
+        <Description/>
+        <Annotations>
+            <DocumentationURL/>
+        </Annotations>
+    </Message>
+    <Message id="RestGatewaySOAPResponse">
+        <MessageText>SOAP Response for REST URI {0} is : {1}</MessageText>
+        <Description/>
+        <Annotations>
+            <DocumentationURL/>
+        </Annotations>
+    </Message>
+    <Message id="RestGatewayResponse">
+        <MessageText>Response for REST URI {0} is : {1}</MessageText>
+        <Description/>
+        <Annotations>
+            <DocumentationURL/>
+        </Annotations>
+    </Message>
+    <Message id="RestMapping">
+        <MessageText>REST Mapping for namespace {0} is {1}</MessageText>
+        <Description/>
+        <Annotations>
+            <DocumentationURL/>
+        </Annotations>
+    </Message>
+    <Message id="GenerateServiceMappingError">
+        <MessageText>Generate Service Mapping Failed with error {0}</MessageText>
+        <Description/>
+        <Annotations>
+            <DocumentationURL/>
+        </Annotations>
+    </Message>
+    <Message id="GenerateServiceMappingErrorMessage">
+        <MessageText>Can not proceed further. There is an internal problem with generateAndGetTheServiceRESTMapping webservice.</MessageText>
+        <Description/>
+        <Annotations>
+            <DocumentationURL/>
+        </Annotations>
+    </Message>
+    <Message id="RESTRequestProcessingCounter">
+        <MessageText>RESTRequestProcessingCounter</MessageText>
+        <Description/>
+        <Annotations>
+            <DocumentationURL/>
+        </Annotations>
+    </Message>
+    <Message id="RESTResponseCreationCounter">
+        <MessageText>RESTResponseCreationCounter</MessageText>
+        <Description/>
+        <Annotations>
+            <DocumentationURL/>
+        </Annotations>
+    </Message>
+    <Message id="FailedToInitializeJMXSettings">
+        <MessageText>Failed to initialize JMX settings for RestGatewayConnector</MessageText>
+        <Description/>
+        <Annotations>
+            <DocumentationURL/>
+        </Annotations>
+    </Message>
+</MessageBundle>

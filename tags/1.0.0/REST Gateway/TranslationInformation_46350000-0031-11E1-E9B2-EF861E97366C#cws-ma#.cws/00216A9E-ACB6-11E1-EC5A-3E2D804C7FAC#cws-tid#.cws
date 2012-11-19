@@ -1,0 +1,23 @@
+
+<TextIdentifier
+	type="com.cordys.translation.TextIdentifier"
+	typeVersion="55890f21-u239-76j6-988a-92j7opq6ws09"
+	RuntimeDocumentID="00216A9E-ACB6-11E1-EC5A-3E2D804C9FAC">
+	<DocumentID>00216A9E-ACB6-11E1-EC5A-3E2D804C7FAC</DocumentID>
+	<Name>00216A9E-ACB6-11E1-EC5A-3E2D804C7FAC</Name>
+	<Description>Example:/employee/4 or /customer</Description>
+	<CreatedBy>ram</CreatedBy>
+	<CreationDate>2012-02-29T14:40:25.055</CreationDate>
+	<Notes/>
+	<DefaultText>Example:/employee/4 or /customer</DefaultText>
+	<Translations>
+		<uri
+			id="00216A9E-ACB6-11E1-EC5A-3E2D804CBFAC"
+		/>
+	</Translations>
+	<TranslationInformation>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E96F66C"
+		/>
+	</TranslationInformation>
+</TextIdentifier>

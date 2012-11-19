@@ -1,0 +1,19 @@
+
+<QualifiedNameRoot
+	type="com.cordys.cws.namespace.qualifiedname.QualifiedNameRoot"
+	RuntimeDocumentID="46350000-0031-11E1-E9B2-F04657F6D66C">
+	<DocumentID>46350000-0031-11E1-E9B2-F04657F6B66C</DocumentID>
+	<Name>runtimeQNR for project</Name>
+	<Description/>
+	<CreatedBy>srajesh</CreatedBy>
+	<CreationDate>2012-02-02T12:14:53.165</CreationDate>
+	<Notes/>
+	<RuntimeQNRFolder>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E97F66C"
+			path="RESTProvider"
+			type="com.cordys.cws.runtime.types.folder.StudioFolder"
+		/>
+	</RuntimeQNRFolder>
+	<DesigntimeQNRFolder/>
+</QualifiedNameRoot>

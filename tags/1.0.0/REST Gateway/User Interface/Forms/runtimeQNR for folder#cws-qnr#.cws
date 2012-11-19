@@ -1,0 +1,19 @@
+
+<QualifiedNameRoot
+	type="com.cordys.cws.namespace.qualifiedname.QualifiedNameRoot"
+	RuntimeDocumentID="46350000-0031-11E1-E9B2-EE0766D6166C">
+	<DocumentID>46350000-0031-11E1-E9B2-EE0766D5F66C</DocumentID>
+	<Name>runtimeQNR for folder</Name>
+	<Description>runtimeQNR for folder</Description>
+	<CreatedBy>srajesh</CreatedBy>
+	<CreationDate>2012-02-02T12:19:25.514</CreationDate>
+	<Notes/>
+	<RuntimeQNRFolder>
+		<uri
+			id="46350000-0031-11E1-E9B2-EE0766D8D66C"
+			path="RESTProvider/User Interface/Forms"
+			type="com.cordys.cws.runtime.types.folder.StudioFolder"
+		/>
+	</RuntimeQNRFolder>
+	<DesigntimeQNRFolder/>
+</QualifiedNameRoot>

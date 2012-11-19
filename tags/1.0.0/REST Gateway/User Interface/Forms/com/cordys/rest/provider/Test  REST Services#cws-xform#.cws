@@ -1,0 +1,2246 @@
+
+<XFormDesigntime
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.xforms.XFormDesigntime"
+	typeVersion="7DF91CE8-0E68-4b94-BA5F-AF95F8FC2839"
+	RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD68A17FAD">
+	<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD68A19FAD</DocumentID>
+	<Name>Test  REST Services</Name>
+	<Description>Test  REST Services</Description>
+	<CreatedBy>ram</CreatedBy>
+	<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+	<Notes/>
+	<XFormContent>
+		<xformhtml
+			xmlns="http://schemas.cordys.com/1.0/xform"
+			xmlns:xforms="http://www.w3.org/2002/xforms/cr"
+			xmlns:ev="http://www.w3.org/2001/xml-events"
+			xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms"
+			xformsversion="2"
+			focusatstartup="true"
+			showNotify="true"
+			showError="true">
+			<xhead>
+				<script
+					src="com/cordys/rest/provider/script/xpathutil.js"
+					documentID="E136A398-2E7A-11E1-FD83-9AB4AB2F1FE0"
+				/>
+				<script
+					src="com/cordys/rest/provider/script/restclient.js"
+					documentID="E136A398-2E7A-11E1-FD83-9AB4AB301FE0"
+				/>
+				<xforms:model
+					id="GetSoftwarePackagesOperationModel"
+					wcpforms:gateway="com.eibus.web.soap.Gateway.wcp"
+					wcpforms:automatic="false"
+					singleTransaction="false"
+					promptToSave="false"
+					isConstraintValidation="false"
+					isInitializationRequired="false"
+					isApplyAccessControl="false"
+					wcpforms:businessElement="tns:entry">
+					<xforms:instance
+						xmlns:xforms="http://www.w3.org/2002/xforms/cr"
+						xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms"
+						wcpforms:timeout=""
+						wcpforms:iteratorSize="50">
+						<wcpforms:dataset
+							xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms"
+							src="http://schemas.cordys.com/1.0/ldap/GetSoftwarePackages"
+							type="get"
+							operationName="GetSoftwarePackages"
+							wcpforms:wsguid="46350000-0031-11E1-E9C4-44C2CF97F66F">
+							<dn
+								xmlns="http://schemas.cordys.com/1.0/ldap"
+							/>
+							<sort
+								xmlns="http://schemas.cordys.com/1.0/ldap"
+							/>
+						</wcpforms:dataset>
+					</xforms:instance>
+					<wcpforms:instanceschema/>
+					<xforms:action
+						ev:event="xforms-onrequest">
+						<xforms:GetSoftwarePackagesOperationModel_OnRequest/>
+					</xforms:action>
+					<xforms:action
+						ev:event="xforms-onresponse">
+						<xforms:GetSoftwarePackagesOperationModel_OnResponse/>
+					</xforms:action>
+					<wcpforms:xpathmetainfo
+						xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms">
+						<wcpforms:namespace
+							prefix="xmlns">http://schemas.cordys.com/1.0/ldap</wcpforms:namespace>
+						<wcpforms:namespace
+							prefix="tns">http://schemas.cordys.com/1.0/ldap</wcpforms:namespace>
+					</wcpforms:xpathmetainfo>
+				</xforms:model>
+				<xforms:model
+					id="RestModel"
+					wcpforms:gateway="com.eibus.web.soap.Gateway.wcp"
+					wcpforms:nontransactional="true"
+					wcpforms:automatic="true"
+					wcpforms:businessElement="ServiceMapping"
+					singleTransaction="false"
+					promptToSave="false"
+					isConstraintValidation="false"
+					isInitializationRequired="false"
+					isApplyAccessControl="false">
+					<xforms:instance
+						xmlns:xforms="http://www.w3.org/2002/xforms/cr"
+						xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms"
+						wcpforms:timeout=""
+						wcpforms:iteratorSize=""
+					/>
+					<wcpforms:instanceschema/>
+					<wcpforms:xpathmetainfo/>
+				</xforms:model>
+				<xforms:model
+					id="GetMethodSetsoperationModel"
+					wcpforms:gateway="com.eibus.web.soap.Gateway.wcp"
+					wcpforms:automatic="false"
+					singleTransaction="false"
+					promptToSave="false"
+					isConstraintValidation="false"
+					isInitializationRequired="false"
+					isApplyAccessControl="false"
+					wcpforms:businessElement="entry">
+					<xforms:instance
+						xmlns:xforms="http://www.w3.org/2002/xforms/cr"
+						xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms"
+						wcpforms:timeout=""
+						wcpforms:iteratorSize="50">
+						<wcpforms:dataset
+							xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms"
+							src="http://schemas.cordys.com/1.0/ldap/GetMethodSets"
+							type="get"
+							operationName="GetMethodSets"
+							wcpforms:wsguid="46350000-0031-11E1-E9C4-44C2CF8FB66F">
+							<labeleduri
+								xmlns="http://schemas.cordys.com/1.0/ldap"
+							/>
+							<sort
+								xmlns="http://schemas.cordys.com/1.0/ldap"
+							/>
+							<dn
+								xmlns="http://schemas.cordys.com/1.0/ldap"
+							/>
+						</wcpforms:dataset>
+					</xforms:instance>
+					<wcpforms:instanceschema/>
+					<wcpforms:xpathmetainfo
+						xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms">
+						<wcpforms:namespace
+							prefix="xmlns">http://schemas.cordys.com/1.0/ldap</wcpforms:namespace>
+						<wcpforms:namespace
+							prefix="tns">http://schemas.cordys.com/1.0/ldap</wcpforms:namespace>
+					</wcpforms:xpathmetainfo>
+					<xforms:action
+						ev:event="xforms-onrequest">
+						<xforms:GetMethodSetsoperationModel_OnRequest/>
+					</xforms:action>
+				</xforms:model>
+				<xforms:model
+					id="GetXMLObjectModel"
+					wcpforms:gateway="com.eibus.web.soap.Gateway.wcp"
+					wcpforms:automatic="false"
+					singleTransaction="false"
+					promptToSave="true"
+					isConstraintValidation="false"
+					isInitializationRequired="false"
+					isApplyAccessControl="false"
+					wcpforms:businessElement="tuple"
+					wcpforms:nontransactional="true">
+					<xforms:instance
+						xmlns:xforms="http://www.w3.org/2002/xforms/cr"
+						xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms"
+						wcpforms:timeout=""
+						wcpforms:iteratorSize="50">
+						<wcpforms:dataset
+							xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms"
+							src="http://schemas.cordys.com/1.0/xmlstore/GetXMLObject"
+							type="get"
+							operationName="GetXMLObject"
+							wcpforms:wsguid="46350000-0031-11E1-EB79-48986918D69C">
+							<key
+								xmlns="http://schemas.cordys.com/1.0/xmlstore"
+								version=""
+							/>
+						</wcpforms:dataset>
+					</xforms:instance>
+					<wcpforms:instanceschema/>
+					<xforms:action
+						ev:event="xforms-onrequest">
+						<xforms:GetXMLObjectModel_OnRequest/>
+					</xforms:action>
+					<xforms:action
+						ev:event="xforms-onresponse">
+						<xforms:GetXMLObjectModel_OnResponse/>
+					</xforms:action>
+					<wcpforms:xpathmetainfo
+						xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms">
+						<wcpforms:namespace
+							prefix="xmlns">http://schemas.cordys.com/1.0/xmlstore</wcpforms:namespace>
+						<wcpforms:namespace
+							prefix="tns">http://schemas.cordys.com/1.0/xmlstore</wcpforms:namespace>
+					</wcpforms:xpathmetainfo>
+				</xforms:model>
+				<xforms:model
+					id="GetOrganizationsByUseroperationModel"
+					wcpforms:gateway="com.eibus.web.soap.Gateway.wcp"
+					wcpforms:automatic="false"
+					singleTransaction="false"
+					promptToSave="false"
+					isConstraintValidation="false"
+					isInitializationRequired="false"
+					isApplyAccessControl="false"
+					wcpforms:businessElement="entry">
+					<xforms:instance
+						xmlns:xforms="http://www.w3.org/2002/xforms/cr"
+						xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms"
+						wcpforms:timeout=""
+						wcpforms:iteratorSize="50">
+						<wcpforms:dataset
+							xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms"
+							src="http://schemas.cordys.com/1.0/ldap/GetOrganizationsByUser"
+							type="get"
+							operationName="GetOrganizationsByUser"
+							wcpforms:wsguid="46350000-0031-11E1-E9C4-44C2CF93766F">
+							<dn
+								xmlns="http://schemas.cordys.com/1.0/ldap"
+							/>
+							<sort
+								xmlns="http://schemas.cordys.com/1.0/ldap"
+							/>
+						</wcpforms:dataset>
+					</xforms:instance>
+					<wcpforms:instanceschema/>
+					<xforms:action
+						ev:event="xforms-onrequest">
+						<xforms:GetOrganizationsByUseroperationModel_OnRequest/>
+					</xforms:action>
+					<xforms:action
+						ev:event="xforms-onresponse">
+						<xforms:GetOrganizationsByUseroperationModel_OnResponse/>
+					</xforms:action>
+					<wcpforms:xpathmetainfo
+						xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms">
+						<wcpforms:namespace
+							prefix="xmlns">http://schemas.cordys.com/1.0/ldap</wcpforms:namespace>
+						<wcpforms:namespace
+							prefix="tns">http://schemas.cordys.com/1.0/ldap</wcpforms:namespace>
+					</wcpforms:xpathmetainfo>
+				</xforms:model>
+				<xforms:model
+					id="ResultMessagesModel"
+					wcpforms:gateway="com.eibus.web.soap.Gateway.wcp"
+					wcpforms:nontransactional="true"
+					wcpforms:automatic="false"
+					wcpforms:businessElement="resultmessage"
+					singleTransaction="false"
+					promptToSave="false"
+					isConstraintValidation="false"
+					isInitializationRequired="false"
+					isApplyAccessControl="false">
+					<xforms:instance
+						xmlns:xforms="http://www.w3.org/2002/xforms/cr"
+						xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms"
+						wcpforms:timeout=""
+						wcpforms:iteratorSize="50"
+					/>
+					<wcpforms:instanceschema/>
+				</xforms:model>
+				<xforms:model
+					id="RESTURIsModel"
+					wcpforms:gateway="com.eibus.web.soap.Gateway.wcp"
+					wcpforms:automatic="false"
+					singleTransaction="false"
+					promptToSave="false"
+					isConstraintValidation="false"
+					isInitializationRequired="false"
+					isApplyAccessControl="false"
+					wcpforms:businessElement="ServiceMapping"
+					wcpforms:nontransactional="true">
+					<xforms:instance
+						xmlns:xforms="http://www.w3.org/2002/xforms/cr"
+						xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms"
+						wcpforms:timeout=""
+						wcpforms:iteratorSize="-1">
+						<wcpforms:dataset
+							xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms"
+							src="http://schemas.cordys.com/RESTMapping/generateAndGetTheServiceRESTMapping"
+							type="get"
+							operationName="generateAndGetTheServiceRESTMapping"
+							wcpforms:wsguid="00216A9E-ACB6-11E1-EBA2-9C7570709FA6">
+							<stringParam1
+								xmlns="http://schemas.cordys.com/RESTMapping"
+							/>
+						</wcpforms:dataset>
+					</xforms:instance>
+					<wcpforms:instanceschema/>
+					<wcpforms:xpathmetainfo
+						xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms">
+						<wcpforms:namespace
+							prefix="xmlns">http://schemas.cordys.com/RESTMapping</wcpforms:namespace>
+						<wcpforms:namespace
+							prefix="tns">http://schemas.cordys.com/RESTMapping</wcpforms:namespace>
+					</wcpforms:xpathmetainfo>
+					<xforms:action
+						ev:event="xforms-onrequest">
+						<xforms:RESTURIsModel_OnRequest/>
+					</xforms:action>
+					<xforms:action
+						ev:event="xforms-onresponse">
+						<xforms:RESTURIsModel_OnResponse/>
+					</xforms:action>
+				</xforms:model>
+				<xforms:model
+					xmlns:xforms="http://www.w3.org/2002/xforms/cr"
+					xmlns:ev="http://www.w3.org/2001/xml-events"
+					xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms"
+					id="generateServiceMappingsModel"
+					wcpforms:businessElement="tns:generateServiceMappings"
+					wcpforms:automatic="false"
+					wcpforms:gateway="com.eibus.web.soap.Gateway.wcp"
+					singleTransaction="false"
+					promptToSave="false"
+					isConstraintValidation="false"
+					isInitializationRequired="false"
+					isApplyAccessControl="false">
+					<xforms:instance
+						xmlns:xforms="http://www.w3.org/2002/xforms/cr"
+						xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms"
+						wcpforms:iteratorSize="50">
+						<wcpforms:dataset
+							src="http://schemas.cordys.com/GenerateServiceMappings/generateServiceMappings"
+							operationName="generateServiceMappings"
+							type="get"
+							wcpforms:wsguid="0026B99A-7FD0-11E1-F0F3-BB9E87DDBB04"
+						/>
+					</xforms:instance>
+					<wcpforms:xpathmetainfo
+						xmlns:wcpforms="http://schemas.cordys.com/wcp/xforms">
+						<wcpforms:namespace
+							prefix="xmlns">http://schemas.cordys.com/GenerateServiceMappings</wcpforms:namespace>
+						<wcpforms:namespace
+							prefix="tns">http://schemas.cordys.com/GenerateServiceMappings</wcpforms:namespace>
+					</wcpforms:xpathmetainfo>
+					<wcpforms:instanceschema/>
+					<xforms:action
+						ev:event="xforms-onresponse">
+						<xforms:generateServiceMappingsModel_OnResponse/>
+					</xforms:action>
+				</xforms:model>
+				<xml
+					xmlns="">
+					<xml
+						id="restXML">
+						<ServiceMappings
+							xmlsns="http://schemas.cordys.com/Northwind">
+							<ServiceMapping>
+								<WSOperation>GetEmployeesObject</WSOperation>
+								<URIPattern>employee/{0}</URIPattern>
+								<HttpMethod>GET</HttpMethod>
+							</ServiceMapping>
+							<ServiceMapping>
+								<WSOperation>GetEmployeesObjects</WSOperation>
+								<URIPattern>employee/{0}/{1}</URIPattern>
+								<HttpMethod>GET</HttpMethod>
+							</ServiceMapping>
+							<ServiceMapping>
+								<WSOperation>UpdateEmployees</WSOperation>
+								<URIPattern>/employee</URIPattern>
+								<HttpMethod>PUT</HttpMethod>
+							</ServiceMapping>
+							<ServiceMapping>
+								<WSOperation>UpdateEmployees</WSOperation>
+								<URIPattern>/employee</URIPattern>
+								<HttpMethod>POST</HttpMethod>
+							</ServiceMapping>
+							<ServiceMapping>
+								<WSOperation>UpdateEmployees</WSOperation>
+								<URIPattern>/employee/{0}</URIPattern>
+								<HttpMethod>DELETE</HttpMethod>
+							</ServiceMapping>
+						</ServiceMappings>
+					</xml>
+					<xml
+						id="messageViewerApplication">
+						<Application>
+							<id>xmlmessageviewer</id>
+							<url>/testtool/xmlviewer.caf</url>
+							<description>Message Viewer</description>
+							<caption>Message Viewer</caption>
+							<icon>/cordys/wcp/theme/default/icon/task/soapnodetesttool.png</icon>
+							<frame
+								docked="false"
+								left="200"
+								top="100">main</frame>
+						</Application>
+					</xml>
+					<xml
+						id="resultMessageXML">
+						<element>
+							<number/>
+							<time/>
+							<type/>
+							<message/>
+						</element>
+					</xml>
+					<xml
+						id="reqXML">
+						<request>
+							<URL/>
+						</request>
+					</xml>
+					<xml
+						id="ID_download">
+						<SOAP:Envelope
+							xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+							<SOAP:Body>
+								<GetXMLObject
+									xmlns="http://schemas.cordys.com/1.0/xmlstore">
+									<key
+										version="">/cordys/AAA.xml</key>
+								</GetXMLObject>
+							</SOAP:Body>
+						</SOAP:Envelope>
+					</xml>
+				</xml>
+			</xhead>
+			<xbody>
+				<xforms:group
+					wcpforms:layout="vertical"
+					id="xbody_group"
+					wcpforms:labelalign="ontop">
+					<xforms:group
+						appearance="group"
+						wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsGroup"
+						id="groupbox1"
+						isNavigationEnabled="true"
+						wcpforms:layout="vertical"
+						wcpforms:class="v_layout"
+						wcpforms:size="null 47px"
+						wcpforms:labelalign="ontop">
+						<xforms:select1
+							wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsSelect"
+							id="selPackagesOrg"
+							doEBIValidate="false"
+							initializeValueSets="0"
+							wcpforms:enumerated="false"
+							multiple="false"
+							wcpforms:class="h_layout"
+							wcpforms:size="277px auto">
+							<xforms:label
+								textIdentifier="00216A9E-ACB6-11E1-EBA3-32D5F52A7FA6"
+								wcpforms:class="v_label">Organization/ISV Package</xforms:label>
+							<xforms:action
+								ev:event="xforms-value-changed">
+								<xforms:selPackagesOrg_Change/>
+							</xforms:action>
+						</xforms:select1>
+						<xforms:select1
+							wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsSelect"
+							id="selMethodSets"
+							doEBIValidate="false"
+							initializeValueSets="0"
+							wcpforms:enumerated="false"
+							multiple="false"
+							wcpforms:dataType="string"
+							wcpforms:textalign="left_align"
+							wcpforms:class="h_layout"
+							wcpforms:size="279px auto">
+							<xforms:label
+								textIdentifier="00216A9E-ACB6-11E1-EBA3-99D85C179FA6"
+								wcpforms:class="v_label">Web Service Interface</xforms:label>
+							<xforms:itemset
+								xmlns:xforms="http://www.w3.org/2002/xforms/cr"
+								model="GetMethodSetsoperationModel">
+								<xforms:label
+									ref="tns:cn/tns:string"
+								/>
+								<xforms:value
+									ref="../tns:entry/@dn"
+								/>
+							</xforms:itemset>
+							<xforms:action
+								ev:event="xforms-value-changed">
+								<xforms:selMethodSets_Change/>
+							</xforms:action>
+						</xforms:select1>
+						<xforms:group
+							appearance="controlbox"
+							wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsControlbox"
+							id="controlbox3"
+							controltype="button"
+							wcpforms:layout="horizontal"
+							wcpforms:class="f_layout"
+							wcpforms:align="left_align"
+							wcpforms:size="307px 31px"
+							wcpforms:position="590px 5px">
+							<xforms:trigger
+								wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsButton"
+								id="btShow"
+								wcpforms:class="h_button"
+								wcpforms:size="8.19em 2.1em">
+								<xforms:label
+									textIdentifier="00216A9E-ACB6-11E1-EBA3-32D5F52BBFA6">Show</xforms:label>
+								<xforms:action
+									ev:event="xforms-activate">
+									<xforms:btShow_Click/>
+								</xforms:action>
+							</xforms:trigger>
+							<xforms:trigger
+								wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsButton"
+								id="btDownload"
+								wcpforms:class="h_button"
+								wcpforms:size="8.19em 2.1em">
+								<xforms:label
+									textIdentifier="46350000-0031-11E1-EC38-F344B8D7F6AC">Download</xforms:label>
+								<xforms:action
+									ev:event="xforms-activate">
+									<xforms:btDownload_Click/>
+								</xforms:action>
+							</xforms:trigger>
+							<xforms:trigger
+								wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsButton"
+								id="buttonLoadServiceMappings"
+								wcpforms:class="h_button"
+								wcpforms:size="6.37em 2em">
+								<xforms:label
+									textIdentifier="BE656D3B-D77D-11E2-E0DF-270A9C0F5FE9">Activate</xforms:label>
+								<xforms:action
+									ev:event="xforms-activate">
+									<xforms:buttonLoadServiceMappings_Click/>
+								</xforms:action>
+							</xforms:trigger>
+						</xforms:group>
+					</xforms:group>
+					<xforms:repeat
+						wcpforms:displayContextMenu="true"
+						wcpforms:toggleColumns="true"
+						wcpforms:movableColumns="false"
+						wcpforms:saveState="false"
+						wcpforms:autoInsert="true"
+						wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsTable"
+						id="tbRestServices"
+						synchronizedDialogFrame="main"
+						isNavigationEnabled="true"
+						model="RestModel"
+						nodeset=".//*[local-name()='ServiceMapping']"
+						wcpforms:gridtype="displaygrid"
+						wcpforms:checkboxes="false"
+						wcpforms:layout="vertical"
+						wcpforms:class="v_layout"
+						wcpforms:size="null 191px">
+						<xforms:group
+							appearance="elementbar"
+							id="_elementBar"
+							wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsElementbar">
+							<xforms:group
+								appearance="controlbar"
+								id="_controlBar"
+								wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsControlbar"
+								wcpforms:class="controlbar">
+								<xforms:trigger
+									wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsElementbarItem"
+									id="navRefresh1"
+									standardid="navRefresh">
+									<xforms:label>
+										<img
+											src="/cordys/wcp/theme/default/icon/action/refresh.png"
+										/>
+									</xforms:label>
+									<xforms:hint>Refresh</xforms:hint>
+								</xforms:trigger>
+							</xforms:group>
+						</xforms:group>
+						<xforms:input
+							wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsInput"
+							id="ipOperation"
+							doEBIValidate="false"
+							ref=".//*[local-name()='WSOperation']"
+							wcpforms:size="100px 100%">
+							<xforms:label
+								textIdentifier="46350000-0031-11E1-E996-85E23A843669">Web Service Operation</xforms:label>
+						</xforms:input>
+						<xforms:input
+							wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsInput"
+							id="ipInterface"
+							doEBIValidate="false"
+							ref="dummyInterface"
+							wcpforms:size="100px 100%">
+							<xforms:label
+								textIdentifier="46350000-0031-11E1-E996-85E23A837669">Web Service Interface</xforms:label>
+							<xforms:action
+								ev:event="xforms-before-data-bind">
+								<xforms:ipInterface_BeforeBind/>
+							</xforms:action>
+						</xforms:input>
+						<xforms:input
+							wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsInput"
+							id="ipHttpMethod"
+							doEBIValidate="false"
+							ref=".//*[local-name()='HttpMethod']"
+							wcpforms:size="100px 100%">
+							<xforms:label
+								textIdentifier="00216A9E-ACB6-11E1-EC43-403D0F313FAB">Http Method</xforms:label>
+						</xforms:input>
+						<xforms:input
+							wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsInput"
+							id="ipRESTUri"
+							doEBIValidate="false"
+							ref=".//*[local-name()='URIPattern']"
+							wcpforms:size="auto 100%">
+							<xforms:label
+								textIdentifier="00216A9E-ACB6-11E1-ECF0-F298425F9FB2">Relative REST  URI</xforms:label>
+						</xforms:input>
+						<xforms:action
+							ev:event="xforms-onrowselect">
+							<xforms:tbRestServices_OnSelectRow/>
+						</xforms:action>
+					</xforms:repeat>
+					<xforms:group
+						appearance="box"
+						wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsGroupbox"
+						id="groupbox2"
+						isNavigationEnabled="true"
+						wcpforms:layout="vertical"
+						wcpforms:class="v_layout"
+						wcpforms:size="null 237px"
+						wcpforms:labelalign="ontop">
+						<xforms:label
+							textIdentifier="00216A9E-ACB6-11E1-EC42-B1935BF9FFAB"
+							wcpforms:class="groupheader">REST Request</xforms:label>
+						<xforms:input
+							wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsInput"
+							id="ipRestURI"
+							doEBIValidate="false"
+							wcpforms:class="v_layout"
+							wcpforms:size="null auto">
+							<xforms:label
+								textIdentifier="00216A9E-ACB6-11E1-EC42-69F9838BBFAB"
+								wcpforms:size="59px null"
+								wcpforms:class="h_label left_align">URI</xforms:label>
+						</xforms:input>
+						<xforms:textarea
+							wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsTextarea"
+							id="taRequest"
+							doEBIValidate="false"
+							wcpforms:layout="vertical"
+							wcpforms:class="v_layout"
+							wcpforms:size="null 116px">
+							<xforms:label
+								textIdentifier="00216A9E-ACB6-11E1-EC42-69F98389BFAB"
+								wcpforms:class="v_label">Request Body</xforms:label>
+						</xforms:textarea>
+						<xforms:group
+							appearance="controlbox"
+							wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsControlbox"
+							id="controlbox1"
+							controltype="button"
+							wcpforms:layout="horizontal"
+							wcpforms:class="h_layout autoextent"
+							wcpforms:align="center_align"
+							wcpforms:size="97.84% auto">
+							<xforms:trigger
+								wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsButton"
+								id="btInvoke"
+								wcpforms:class="h_button"
+								wcpforms:size="7.46em 2em">
+								<xforms:label
+									textIdentifier="00216A9E-ACB6-11E1-EC42-B1935BFDDFAB">Invoke</xforms:label>
+								<xforms:action
+									ev:event="xforms-activate">
+									<xforms:btInvoke_Click/>
+								</xforms:action>
+							</xforms:trigger>
+						</xforms:group>
+					</xforms:group>
+					<xforms:group
+						appearance="box"
+						wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsGroupbox"
+						id="groupbox3"
+						isNavigationEnabled="true"
+						wcpforms:layout="vertical"
+						wcpforms:class="v_layout"
+						wcpforms:size="null 301px"
+						wcpforms:labelalign="ontop">
+						<xforms:label
+							textIdentifier="00216A9E-ACB6-11E1-EC42-B1935C013FAB"
+							wcpforms:class="groupheader">Response</xforms:label>
+						<xforms:output
+							wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsOutput"
+							id="ipStatus"
+							doEBIValidate="false"
+							wcpforms:class="v_layout"
+							wcpforms:size="190px auto">
+							<xforms:label
+								textIdentifier="00216A9E-ACB6-11E1-EC40-8D6627CC9FAB"
+								wcpforms:size="59px null"
+								wcpforms:class="h_label left_align">Status</xforms:label>
+						</xforms:output>
+						<xforms:textarea
+							wcpforms:designLibrary="cas.xforms.designerlibrary.controls.XFormsTextarea"
+							id="taResponse"
+							doEBIValidate="false"
+							wcpforms:layout="vertical"
+							wcpforms:class="v_layout"
+							wcpforms:size="null 224px">
+							<xforms:label
+								textIdentifier="00216A9E-ACB6-11E1-EC42-B1935C013FAB"
+								wcpforms:class="v_label removed">Response</xforms:label>
+							<xforms:action
+								ev:event="xforms-value-changed">
+								<xforms:taResponse_Change/>
+							</xforms:action>
+						</xforms:textarea>
+					</xforms:group>
+					<div
+						xmlns="http://www.w3.org/2002/xforms/cr"
+						xformextendedname="xmlutil"
+						id="xmlutil1"
+						namespace="wcp.library.util.XMLUtil"
+						hidden="true"
+						wcpforms:designLibrary="cas.xforms.designerlibrary.controls.extensions.XMLUtil"
+						wcpforms:layout="free"
+						wcpforms:size="80px 50px"
+						wcpforms:position="0px 580px"
+					/>
+					<div
+						xmlns="http://www.w3.org/2002/xforms/cr"
+						xformextendedname="download"
+						id="downloader"
+						namespace="cas.xforms.runtimelibrary.Download"
+						hidden="true"
+						wcpforms:designLibrary="cas.xforms.designerlibrary.controls.extensions.Download"
+						model=""
+						searchPath="&lt;tuple&gt;&lt;old&gt;"
+						fileName=""
+						request=""
+						openInNewWindow=""
+						wcpforms:class="f_layout"
+						wcpforms:layout="free"
+						wcpforms:size="150px 100px"
+						wcpforms:position="0px 630px"
+					/>
+				</xforms:group>
+			</xbody>
+			<xformsscript>
+				<![CDATA[
+var globalObj = null; // keeps all constants
+var businessObject = null;
+var data = null;
+var selMethodInterface = null;
+var httpMethod = "GET";
+var uri = "";
+var httMethodType = "";
+var url = "";
+resourceName = "";
+var resourceKeyPath = "/Cordys/servicemapping/resttosoap/";
+var key = "";
+var resourceTemplateData = "";
+var baseURL = "/cordys/restful";
+
+// from test tool
+var replyDocList = new Array(); // array to store reply busdocs
+var sentDocList = new Array(); // array to store sent busdocs
+var replyDocCount = 0; // Count for the replyDocList array
+var sentDocCount = 0; // count for the sentDocList array
+var serialNo = 0;
+var rootXml;
+
+function Form_InitDone(eventObject)
+{
+    initGlobalObjects();
+    GetSoftwarePackagesOperationModel.reset();
+    GetOrganizationsByUseroperationModel.reset();
+    clearSelection(selPackagesOrg);
+    btDownload.disable();
+}
+
+function initGlobalObjects()
+{
+    var nsPrefixes = {
+        'SOAP' : 'http://schemas.xmlsoap.org/soap/envelope/',
+        'ldap' : 'http://schemas.cordys.com/1.0/ldap',
+        'store' : 'http://schemas.cordys.com/1.0/xmlstore'
+    };
+    globalObj = new Object();
+    globalObj.nsPrefixes = nsPrefixes;
+    globalObj.constants = new Object();
+    globalObj.ISV = "isv";
+    globalObj.ORG = "org";
+    globalObj.SOAPXPath = "/SOAP:Envelope/SOAP:Body";
+    var userDn = system.getUser().authUserDN;
+    globalObj.instanceDN = userDn.substring(userDn.lastIndexOf("cn=cordys"));
+    globalObj.wsdlGatewayURL = "/cordys/com.eibus.web.tools.wsdl.WSDLGateway.wcp";
+    globalObj.curLabeledUri = "";
+    globalObj.curDefinition = null;
+    globalObj.curMethodDNs = new Array();
+    globalObj.XMLSTORE_PATH = "/Cordys/servicemappings/rest/";
+    globalObj.resourcePath = null;
+    globalObj.resourceLastModified = null;
+    // WSDLManager
+    manager = document.createElement("div");
+    manager.id = "manager";
+    manager.style.display = "none";
+    application.appendToBody(manager);
+    application.addType(manager, "wcp.library.util.wsdl.WSDLManager");
+    manager.setResolveExternals(true);
+    manager.onerror = "showError()";
+    // XMLUtil
+    xmlUtil = document.createElement("div");
+    xmlUtil.id = "xmlUtil";
+    xmlUtil.style.display = "none";
+    application.appendToBody(xmlUtil);
+    application.addType(xmlUtil, "wcp.library.util.XMLUtil");
+}
+
+function GetSoftwarePackagesOperationModel_OnRequest(eventObject)
+{
+    var baseXPath = globalObj.SOAPXPath + "/ldap:GetSoftwarePackages";
+    var request = eventObject.request;
+    cordys.setXMLNamespaces(request, globalObj.nsPrefixes);
+    cordys.setNodeText(request, baseXPath + "/ldap:dn", globalObj.instanceDN);
+    cordys.setNodeText(request, baseXPath + "/ldap:sort", "ascending");
+}
+
+function GetSoftwarePackagesOperationModel_OnResponse(eventObject)
+{
+    var baseXPath = globalObj.SOAPXPath + "/ldap:GetSoftwarePackagesResponse";
+    var orgDnXPath = baseXPath + "/ldap:tuple/ldap:old/ldap:entry/@dn";
+    var orgDescXPath = baseXPath + "/ldap:tuple/ldap:old/ldap:entry/ldap:cn/ldap:string";
+    var response = eventObject.response;
+    cordys.setXMLNamespaces(response, globalObj.nsPrefixes);
+    var isvDNs = cordys.selectXMLNodes(response, orgDnXPath);
+    var isvDescs = cordys.selectXMLNodes(response, orgDescXPath);
+    for ( var i = 0; i < isvDescs.length; i++)
+    {
+        var option = {
+            value : cordys.getTextContent(isvDNs[i]),
+            description : cordys.getTextContent(isvDescs[i])
+        };
+        selPackagesOrg.addOption(option, false, 0, false);
+    }
+}
+
+function GetOrganizationsByUseroperationModel_OnRequest(eventObject)
+{
+    var baseXPath = globalObj.SOAPXPath + "/ldap:GetOrganizationsByUser";
+    var request = eventObject.request;
+    cordys.setXMLNamespaces(request, globalObj.nsPrefixes);
+    cordys.setNodeText(request, baseXPath + "/ldap:dn", "");
+    cordys.setNodeText(request, baseXPath + "/ldap:sort", "ascending");
+}
+
+function GetOrganizationsByUseroperationModel_OnResponse(eventObject)
+{
+    var baseXPath = globalObj.SOAPXPath + "/ldap:GetOrganizationsByUserResponse";
+    var entryXPath = baseXPath + "/ldap:tuple/ldap:old/ldap:entry[ldap:objectclass/ldap:string='organization']";
+    var response = eventObject.response;
+    cordys.setXMLNamespaces(response, globalObj.nsPrefixes);
+    var entryNodes = cordys.selectXMLNodes(response, entryXPath);
+    for ( var i = 0; i < entryNodes.length; i++)
+    {
+        var option = {
+            value : entryNodes[i].getAttribute("dn"),
+            description : cordys.getNodeText(entryNodes[i], "ldap:description/ldap:string")
+        };
+        selPackagesOrg.addOption(option, false, 0, false);
+    }
+}
+
+function selPackagesOrg_Change(eventObject)
+{
+    if (cordys.getEventTarget(eventObject).getValue() == '0')
+    {
+        selMethodSets.removeOptions(selMethodSets.getAllOptions(), false);
+    }
+    else
+    {
+        GetMethodSetsoperationModel.reset();
+    }
+    clearSelection(selMethodSets);
+    RestModel.clear();
+    clearData();
+    btDownload.disable();
+}
+
+function GetMethodSetsoperationModel_OnRequest(eventObject)
+{
+    var baseXPath = globalObj.SOAPXPath + "/ldap:GetMethodSets";
+    var request = eventObject.request;
+    cordys.setXMLNamespaces(request, globalObj.nsPrefixes);
+    cordys.setNodeText(request, baseXPath + "/ldap:labeleduri", "*");
+    cordys.setNodeText(request, baseXPath + "/ldap:sort", "ascending");
+    cordys.setNodeText(request, baseXPath + "/ldap:dn", selPackagesOrg.getValue());
+}
+
+function clearSelection(selectBox)
+{
+    var option = {
+        value : '0',
+        description : '--select--'
+    };
+    selectBox.addOption(option, false, 0, false);
+    selectBox.setValue('0');
+}
+
+function selMethodSets_Change(eventObject)
+{
+    var selectedMethodSet = selMethodSets.getValue();
+    selMethodInterface = selMethodSets.getFormattedValue();
+    lUriXpath = '/dataset/data/ldap:GetMethodSetsResponse' + "/ldap:tuple/ldap:old/ldap:entry[@dn='" + selectedMethodSet + "']/ldap:labeleduri";
+    var getMethodsData = GetMethodSetsoperationModel.getData();
+    cordys.setXMLNamespaces(getMethodsData, globalObj.nsPrefixes);
+    globalObj.curLabeledUri = cordys.getNodeText(getMethodsData, lUriXpath);
+}
+
+function RESTURIsModel_OnRequest(eventObject)
+{
+    request = eventObject.request;
+    cordys.setNodeText(request, ".//*[local-name() = 'stringParam1']", globalObj.curLabeledUri);
+    eventObject.request = request;
+}
+
+function RESTURIsModel_OnResponse(eventObject)
+{
+    response = eventObject.response;
+    var responseNode = cordys.selectXMLNode(response, ".//*[local-name() = 'ServiceMappings']", null);
+    if (!cordys.selectXMLNode(responseNode, ".//*[local-name() = 'ServiceMapping']", null))
+    {
+        application.notify(localization_get("noRestServices"));
+        btDownload.disable();
+        RestModel.clear();
+        RestModel.refreshAllViews();
+        return;
+    }
+    RestModel.putData(responseNode, true);
+    btDownload.enable();
+}
+
+function btShow_Click(eventObject)
+{
+    resourceTemplateData = "";
+    resourceName = "";
+    if (selMethodSets.getValue() == '0')
+    {
+        application.notify(localization_get("selectAnyInterface"));
+        return;
+    }
+    clearData();
+    RESTURIsModel.reset();
+}
+
+function tbRestServices_OnSelectRow(eventObject)
+{
+    clearData();
+    businessObject = cordys.getEventTarget(eventObject).businessObject;
+    uri = cordys.getNodeText(businessObject, ".//*[local-name()='URIPattern']");
+    httpMethodType = cordys.getNodeText(businessObject, ".//*[local-name()='HttpMethod']");
+    composeRequest(uri, httpMethodType);
+}
+
+function composeRequest(uri, httpMethodType)
+{
+    if (resourceName != cordys.getNodeText(businessObject, ".//*[local-name()='Resource']"))
+    {
+        resourceName = cordys.getNodeText(businessObject, ".//*[local-name()='Resource']");
+        key = resourceKeyPath + resourceName + ".xml";
+        callResourceXMLTemplate();
+        displayBodyXML(httpMethodType);
+    }
+    else
+    {
+        displayBodyXML(httpMethodType);
+    }
+    ipRestURI.setValue(uri);
+}
+
+function callResourceXMLTemplate()
+{
+    GetXMLObjectModel.reset();
+}
+
+function displayBodyXML(httpMethodType)
+{
+    if (httpMethodType == "POST" || httpMethodType == "PUT")
+    {
+        taRequest.enable();
+        toGetRestBody("HTTPBody");
+    }
+    else
+    {
+        taRequest.disable();
+        taRequest.setValue("");
+    }
+}
+
+function toGetRestBody(xPathNodeText)
+{
+    var xPathForSoapBody = ".//*[local-name()='" + httpMethodType + "']/*[local-name()='WSOperation'][@URIPattern='" + uri + "']/*[local-name()='" + xPathNodeText + "']";
+    var someNode = cordys.selectXMLNode(resourceTemplateData, xPathForSoapBody);
+	if(someNode)
+	{
+		taRequest.setValue(xmlutil1.xml2nicestring(someNode.firstChild));
+	}
+	else
+	{
+		application.showError(localization_get("invalidMapping"));
+	}
+}
+
+function clearData()
+{
+    taRequest.setValue("");
+    taResponse.setValue("");
+    ipRestURI.setValue("");
+}
+
+function btInvoke_Click(eventObject)
+{
+    if (validateData())
+    {
+        url = ipRestURI.getValue();
+        if (application && window.application.organization)
+        {
+            addParameterToURL("organization", window.application.organization);
+        }
+        var rr = new RestfulResource(url);
+
+        if (httpMethodType == "GET")
+        {
+            rr.retrieve();
+        }
+        else
+            if (httpMethodType == "PUT")
+            {
+                if (getParsed())
+                {
+                    rr.create(taRequest.getValue());
+                }
+            }
+            else
+                if (httpMethodType == "POST")
+                {
+                    if (getParsed())
+                    {
+                        rr.update(taRequest.getValue());
+                    }
+                }
+                else
+                {
+                    rr.remove();
+                }
+    }
+}
+
+function validateData()
+{
+    if (ipRestURI.getValue() != "" && tbRestServices.getRows().length != 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+function addParameterToURL(name, value)
+{
+    var gatewayName = "/com.cordys.web.rest.RESTGateway.wcp";
+    url = baseURL + url;
+    url += gatewayName;
+    var questionMarkPosition = url.indexOf("?");
+    var addAmpersand = questionMarkPosition >= 0 && questionMarkPosition < url.length - 1 && !/&$/.test(url);
+    var addQuestionMark = questionMarkPosition <= 0;
+    if (addQuestionMark)
+    {
+        url += "?";
+    }
+    if (addAmpersand)
+    {
+        url += "&";
+    }
+    url += name + "=" + value;
+}
+
+function trim(str)
+{
+    return str.replace(/^\s+|\s+$/g, "");
+}
+
+function getParsed()
+{
+    requestSOAP = cordys.loadXMLDocument(taRequest.getValue());
+    if (!trim(taRequest.getValue()))
+    {
+        application.showError(localization_get("blankRequest"));
+        return false;
+    }
+    else
+        if (requestSOAP.parseError.reason != "")
+        {
+            application.showError(requestSOAP.parseError.reason);
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+}
+
+function GetXMLObjectModel_OnResponse(eventObject)
+{
+    resourceTemplateData = cordys.cloneXMLDocument(eventObject.response.ownerDocument);
+}
+
+function GetXMLObjectModel_OnRequest(eventObject)
+{
+    cordys.setNodeText(eventObject.request, ".//*[local-name()='key']", key);
+}
+
+function taResponse_Change(eventObject)
+{
+    // if(taResponse.getValue() != "");
+    // captureRequestResponse(url,responseText);
+}
+
+function captureRequestResponse(reqDoc, resDoc)
+{
+    sentDocList[sentDocCount] = createReqDocXML(reqDoc);
+    clear.show();
+    responseTable.show();
+    prepareXML("sent", sentDocCount);
+    sentDocCount += 1;
+    responseDoc = cordys.loadXMLDocument(taResponse.getValue());
+    replyDocList[replyDocCount] = responseDoc;
+    prepareXML("received", replyDocCount);
+    replyDocCount += 1;
+    responseTable.setIndex(responseTable.getRows().length);
+}
+
+function createReqDocXML(reqDoc)
+{
+    var xmlDoc = cordys.getXMLDocument();
+    var rootXml = xmlDoc.createElement("requestinfo");
+    var reqNode = cordys.cloneXMLDocument(reqXML.XMLDocument).documentElement;
+    cordys.appendXMLNode(reqNode, rootXml);
+    cordys.setNodeText(reqNode, ".//URL", reqDoc);
+    return rootXml;
+}
+
+function prepareXML(message, incrementor)
+{
+    var curDate = new Date();
+    var date = curDate.toLocaleString();
+    var xmlDoc = cordys.getXMLDocument();
+    serialNo += 1;
+    var rsMessage;
+    if (message == "sent")
+    {
+        rsMessage = "Request Message" + (incrementor + 1);
+    }
+    else
+    {
+        rsMessage = "Response Message" + (incrementor + 1);
+    }
+    if (serialNo == 1)
+    {
+        rootXml = xmlDoc.createElement("resultmessage");
+    }
+    var elementNode = cordys.cloneXMLDocument(resultMessageXML.XMLDocument).documentElement;
+    cordys.appendXMLNode(elementNode, rootXml);
+    cordys.setNodeText(elementNode, ".//number", serialNo);
+    cordys.setNodeText(elementNode, ".//time", date);
+    cordys.setNodeText(elementNode, ".//type", message);
+    cordys.setNodeText(elementNode, ".//message", rsMessage);
+    ResultMessagesModel.clear();
+    ResultMessagesModel.putData(rootXml, true);
+    ResultMessagesModel.reset();
+}
+
+function clear_Click(eventObject)
+{
+    responseTable.redraw();
+    responseTable.hide();
+    clear.hide();
+    resetCounters();
+}
+
+function resetCounters()
+{
+    sentDocList.slice(0);
+    replyDocList.slice(0);
+    replyDocCount = 0;
+    sentDocCount = 0;
+    serialNo = 0;
+}
+
+function responseTable_OnSelectRow(eventObject)
+{
+    var busObject = cordys.getEventTarget(eventObject).businessObject;
+    var type = cordys.getNodeText(busObject, "*[local-name()='type']");
+    var msg = cordys.getNodeText(busObject, "*[local-name()='message']");
+    var number;
+    if (type == "sent")
+    {
+        number = msg.substring(15);
+    }
+    else
+    {
+        number = msg.substring(16);
+    }
+    showMessages(msg, number, type);
+}
+
+function showMessages(msg, number, type)
+{
+    var messageViewerApp = cordys.cloneXMLDocument(messageViewerApplication.XMLDocument).documentElement;
+    var idNode = cordys.selectXMLNode(messageViewerApp, "*[local-name()='id']");
+    cordys.setTextContent(idNode, cordys.getTextContent(idNode) + msg);
+    cordys.setNodeText(messageViewerApp, "*[local-name()='description']", msg);
+
+    var update = new Object();
+    if (type == "sent")
+    {
+        update.object = sentDocList[number - 1];
+    }
+    else
+    {
+        update.object = replyDocList[number - 1];
+    }
+    application.select(messageViewerApp, update, null);
+}
+
+function ipInterface_BeforeBind(eventObject)
+{
+    ipInterface[tbRestServices.getIndex()].setValue(selMethodInterface);
+}
+
+function btDownload_Click(eventObject)
+{
+    if (tbRestServices.getRows().length > 0)
+    {
+        var downloadResource = cordys.getNodeText(tbRestServices.getRows()[tbRestServices.getIndex() - 1].businessObject, ".//*[local-name()='Resource']");
+        var xmlStoreKey = resourceKeyPath + downloadResource + ".xml";
+        if (!downloadResource || downloadResource == "")
+        {
+            application.notify(localization_get("selectDifferentInterface"));
+        }
+        else
+        {
+            downloadFile(xmlStoreKey, downloadResource);
+        }
+    }
+}
+
+function downloadFile(xmlStoreKey, fileName)
+{
+    var request = ID_download.XMLDocument;
+    var xpath = globalObj.SOAPXPath + "/store:GetXMLObject/store:key";
+    cordys.setXMLNamespaces(request, globalObj.nsPrefixes);
+    cordys.setNodeText(request, xpath, xmlStoreKey);
+    downloader.request = request;
+    downloader.searchPath = "<tuple><old>";
+    downloader.fileName = fileName + ".xml";
+    downloader.openInNewWindow = "true";
+    downloader.organization = application.organization.toLowerCase();
+    downloader.dispositionType = "attachment";
+    downloader.contentType = "text/xml";
+    downloader.decode = false;
+    downloader.downloadFile();
+}
+
+function buttonLoadServiceMappings_Click(eventObject)
+{
+    application.confirm(localization_get("doYouWantToProceed"), false, closeHandler, false, "ReST Confirm Message");
+}
+
+function closeHandler(confirmReturnValue)
+{
+    if (confirmReturnValue == 1)
+    {
+        generateServiceMappingsModel.reset();
+    }
+    else
+        if (confirmReturnValue == 0)
+        {
+        }
+        else
+        {
+        }
+}
+
+function generateServiceMappingsModel_OnResponse(eventObject)
+{
+    var response = eventObject.response;
+    var responseVal = cordys.getNodeText(response, ".//*[local-name() = 'generateServiceMappings']/*[local-name() = 'generateServiceMappings']", "", "");
+    if (responseVal == "true")
+    {
+        application.notify(localization_get("loadingSuccessful"));
+    }
+    else
+        if (responseVal == "false")
+        {
+            application.notify(localization_get("loadingFailed"));
+        }
+}]]>
+			</xformsscript>
+			<xforms:action
+				ev:event="xforms-initialize-done">
+				<xforms:Form_InitDone/>
+			</xforms:action>
+		</xformhtml>
+	</XFormContent>
+	<XFormWSDL/>
+	<automatic>false</automatic>
+	<caption></caption>
+	<data/>
+	<height></height>
+	<isInternal>false</isInternal>
+	<isLegacy>false</isLegacy>
+	<left></left>
+	<mode>full</mode>
+	<parameters/>
+	<qualifiedclassname></qualifiedclassname>
+	<showOnStartPage>true</showOnStartPage>
+	<taskDescription>Test  REST Services</taskDescription>
+	<taskName>Test  REST Services</taskName>
+	<title>true</title>
+	<top></top>
+	<type>XForm</type>
+	<width></width>
+	<CompositeControls/>
+	<Htms/>
+	<Images/>
+	<InstanceSchemaFragments/>
+	<Javascripts>
+		<uri
+			id="E136A398-2E7A-11E1-FD83-9AB4AB2F1FE0"
+			path="REST Gateway/User Interface/Web/com/cordys/rest/provider/script/xpathutil.js"
+			type="com.cordys.cws.documenttypes.javascript.Javascript"
+		/>
+		<uri
+			id="E136A398-2E7A-11E1-FD83-9AB4AB301FE0"
+			path="REST Gateway/User Interface/Web/com/cordys/rest/provider/script/restclient.js"
+			type="com.cordys.cws.documenttypes.javascript.Javascript"
+		/>
+	</Javascripts>
+	<ReferredXForms/>
+	<Representations/>
+	<StyleSheets/>
+	<TranslatableApplications/>
+	<TranslatableName>
+		<TranslatableText
+			type="com.cordys.translation.TranslatableText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-ECE9-979080995FB2">
+			<DocumentID>00216A9E-ACB6-11E1-ECEA-00C2EBF01FB2</DocumentID>
+			<Name>00216A9E-ACB6-11E1-ECEA-00C2EBF01FB2</Name>
+			<Description>00216A9E-ACB6-11E1-ECEA-00C2EBF01FB2</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-06T05:49:01.818</CreationDate>
+			<Notes/>
+			<Identifier>
+				<uri
+					id="00216A9E-ACB6-11E1-ECE9-979080999FB2"
+				/>
+			</Identifier>
+		</TranslatableText>
+	</TranslatableName>
+	<TranslatableUITexts>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD68967FAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD68969FAD</DocumentID>
+			<Name>00216A9E-ACB6-11E1-EC86-25DED239BFAD</Name>
+			<Description>00216A9E-ACB6-11E1-EC86-25DED239BFAD</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.222</CreationDate>
+			<Notes/>
+			<UIRef>output3</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD68963FAD">
+					<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD68965FAD</DocumentID>
+					<Name>00216A9E-ACB6-11E1-EC8C-48FBE45E9FAD</Name>
+					<Description>00216A9E-ACB6-11E1-EC8C-48FBE45E9FAD</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-02T14:15:12.222</CreationDate>
+					<Notes/>
+					<Identifier>
+						<uri
+							id="00216A9E-ACB6-11E1-EC5D-644AF9DCBFAC"
+						/>
+					</Identifier>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD6896FFAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD68971FAD</DocumentID>
+			<Name>46350000-0031-11E1-E992-4638F82AD669</Name>
+			<Description>46350000-0031-11E1-E992-4638F82AD669</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.222</CreationDate>
+			<Notes/>
+			<UIRef>ipOperation</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD6896BFAD">
+					<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD6896DFAD</DocumentID>
+					<Name>46350000-0031-11E1-E996-85E23A83F669</Name>
+					<Description>46350000-0031-11E1-E996-85E23A83F669</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+					<Notes/>
+					<Identifier/>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD68977FAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD68979FAD</DocumentID>
+			<Name>46350000-0031-11E1-E993-76894E2DB669</Name>
+			<Description>46350000-0031-11E1-E993-76894E2DB669</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+			<Notes/>
+			<UIRef>ipInterface</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD68973FAD">
+					<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD68975FAD</DocumentID>
+					<Name>46350000-0031-11E1-E996-85E23A833669</Name>
+					<Description>46350000-0031-11E1-E996-85E23A833669</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+					<Notes/>
+					<Identifier/>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD6897FFAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD68981FAD</DocumentID>
+			<Name>00216A9E-ACB6-11E1-EC42-69F9838DFFAB</Name>
+			<Description>00216A9E-ACB6-11E1-EC42-69F9838DFFAB</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+			<Notes/>
+			<UIRef>groupbox2</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD6897BFAD">
+					<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD6897DFAD</DocumentID>
+					<Name>00216A9E-ACB6-11E1-EC42-B1935BF9BFAB</Name>
+					<Description>00216A9E-ACB6-11E1-EC42-B1935BF9BFAB</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-02T14:15:12.222</CreationDate>
+					<Notes/>
+					<Identifier>
+						<uri
+							id="00216A9E-ACB6-11E1-EC42-B1935BF9FFAB"
+						/>
+					</Identifier>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD68987FAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD68989FAD</DocumentID>
+			<Name>00216A9E-ACB6-11E1-EBA3-32D5F52F5FA6</Name>
+			<Description>00216A9E-ACB6-11E1-EBA3-32D5F52F5FA6</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.222</CreationDate>
+			<Notes/>
+			<UIRef>selPackagesOrg</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD68983FAD">
+					<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD68985FAD</DocumentID>
+					<Name>00216A9E-ACB6-11E1-EBA3-32D5F52A3FA6</Name>
+					<Description>00216A9E-ACB6-11E1-EBA3-32D5F52A3FA6</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+					<Notes/>
+					<Identifier>
+						<uri
+							id="00216A9E-ACB6-11E1-EBA3-32D5F52A7FA6"
+						/>
+					</Identifier>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD68997FAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD68999FAD</DocumentID>
+			<Name>00216A9E-ACB6-11E1-EC42-B1935BF77FAB</Name>
+			<Description>00216A9E-ACB6-11E1-EC42-B1935BF77FAB</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+			<Notes/>
+			<UIRef>ipStatus</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD68993FAD">
+					<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD68995FAD</DocumentID>
+					<Name>00216A9E-ACB6-11E1-EC43-403D0F355FAB</Name>
+					<Description>00216A9E-ACB6-11E1-EC43-403D0F355FAB</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+					<Notes/>
+					<Identifier>
+						<uri
+							id="00216A9E-ACB6-11E1-EC40-8D6627CC9FAB"
+						/>
+					</Identifier>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD6899FFAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689A1FAD</DocumentID>
+			<Name>00216A9E-ACB6-11E1-EC42-69F9838A5FAB</Name>
+			<Description>00216A9E-ACB6-11E1-EC42-69F9838A5FAB</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+			<Notes/>
+			<UIRef>taRequest</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD6899BFAD">
+					<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD6899DFAD</DocumentID>
+					<Name>00216A9E-ACB6-11E1-EC42-69F983897FAB</Name>
+					<Description>00216A9E-ACB6-11E1-EC42-69F983897FAB</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+					<Notes/>
+					<Identifier>
+						<uri
+							id="00216A9E-ACB6-11E1-EC42-69F98389BFAB"
+						/>
+					</Identifier>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689A7FAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689A9FAD</DocumentID>
+			<Name>46350000-0031-11E1-E992-4638F82A5669</Name>
+			<Description>46350000-0031-11E1-E992-4638F82A5669</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+			<Notes/>
+			<UIRef>ipRESTUri</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-ECF0-F298425F7FB2">
+					<DocumentID>00216A9E-ACB6-11E1-ECF0-F298425F5FB2</DocumentID>
+					<Name>00216A9E-ACB6-11E1-ECF0-F298425F5FB2</Name>
+					<Description>00216A9E-ACB6-11E1-ECF0-F298425F5FB2</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-06T12:31:35.91</CreationDate>
+					<Notes/>
+					<Identifier>
+						<uri
+							id="00216A9E-ACB6-11E1-ECF0-F298425F9FB2"
+						/>
+					</Identifier>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689AFFAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689B1FAD</DocumentID>
+			<Name>00216A9E-ACB6-11E1-EC42-B1935BF8BFAB</Name>
+			<Description>00216A9E-ACB6-11E1-EC42-B1935BF8BFAB</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+			<Notes/>
+			<UIRef>groupbox3</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689ABFAD">
+					<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689ADFAD</DocumentID>
+					<Name>00216A9E-ACB6-11E1-EC42-B1935BF87FAB</Name>
+					<Description>00216A9E-ACB6-11E1-EC42-B1935BF87FAB</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+					<Notes/>
+					<Identifier>
+						<uri
+							id="00216A9E-ACB6-11E1-EC42-B1935C013FAB"
+						/>
+					</Identifier>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689B7FAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689B9FAD</DocumentID>
+			<Name>00216A9E-ACB6-11E1-EC86-25DED23AFFAD</Name>
+			<Description>00216A9E-ACB6-11E1-EC86-25DED23AFFAD</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+			<Notes/>
+			<UIRef>output2</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689B3FAD">
+					<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689B5FAD</DocumentID>
+					<Name>00216A9E-ACB6-11E1-EC8C-48FBE45EDFAD</Name>
+					<Description>00216A9E-ACB6-11E1-EC8C-48FBE45EDFAD</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+					<Notes/>
+					<Identifier>
+						<uri
+							id="00216A9E-ACB6-11E1-EC5D-644AF9DD7FAC"
+						/>
+					</Identifier>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689BFFAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689C1FAD</DocumentID>
+			<Name>00216A9E-ACB6-11E1-EC42-B1935C01BFAB</Name>
+			<Description>00216A9E-ACB6-11E1-EC42-B1935C01BFAB</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+			<Notes/>
+			<UIRef>taResponse</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689BBFAD">
+					<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689BDFAD</DocumentID>
+					<Name>00216A9E-ACB6-11E1-EC42-B1935C00FFAB</Name>
+					<Description>00216A9E-ACB6-11E1-EC42-B1935C00FFAB</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+					<Notes/>
+					<Identifier>
+						<uri
+							id="00216A9E-ACB6-11E1-EC42-B1935C013FAB"
+						/>
+					</Identifier>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689C7FAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689C9FAD</DocumentID>
+			<Name>00216A9E-ACB6-11E1-EC86-25DED237BFAD</Name>
+			<Description>00216A9E-ACB6-11E1-EC86-25DED237BFAD</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.222</CreationDate>
+			<Notes/>
+			<UIRef>output5</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689C3FAD">
+					<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689C5FAD</DocumentID>
+					<Name>00216A9E-ACB6-11E1-EC8C-48FBE45E1FAD</Name>
+					<Description>00216A9E-ACB6-11E1-EC8C-48FBE45E1FAD</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-02T14:15:12.222</CreationDate>
+					<Notes/>
+					<Identifier>
+						<uri
+							id="00216A9E-ACB6-11E1-EC5D-644AF9DB3FAC"
+						/>
+					</Identifier>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689CFFAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689D1FAD</DocumentID>
+			<Name>00216A9E-ACB6-11E1-EC87-0AC955E49FAD</Name>
+			<Description>00216A9E-ACB6-11E1-EC87-0AC955E49FAD</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.222</CreationDate>
+			<Notes/>
+			<UIRef>ipHttpMethod</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689CBFAD">
+					<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689CDFAD</DocumentID>
+					<Name>00216A9E-ACB6-11E1-EC87-0AC955E41FAD</Name>
+					<Description>00216A9E-ACB6-11E1-EC87-0AC955E41FAD</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+					<Notes/>
+					<Identifier>
+						<uri
+							id="00216A9E-ACB6-11E1-EC43-403D0F313FAB"
+						/>
+					</Identifier>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689DFFAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689E1FAD</DocumentID>
+			<Name>00216A9E-ACB6-11E1-EC42-69F9838C3FAB</Name>
+			<Description>00216A9E-ACB6-11E1-EC42-69F9838C3FAB</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+			<Notes/>
+			<UIRef>ipRestURI</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689DBFAD">
+					<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689DDFAD</DocumentID>
+					<Name>00216A9E-ACB6-11E1-EC42-69F9838B7FAB</Name>
+					<Description>00216A9E-ACB6-11E1-EC42-69F9838B7FAB</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+					<Notes/>
+					<Identifier>
+						<uri
+							id="00216A9E-ACB6-11E1-EC42-69F9838BBFAB"
+						/>
+					</Identifier>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689E7FAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689E9FAD</DocumentID>
+			<Name>00216A9E-ACB6-11E1-EBA3-32D5F52E5FA6</Name>
+			<Description>00216A9E-ACB6-11E1-EBA3-32D5F52E5FA6</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.222</CreationDate>
+			<Notes/>
+			<UIRef>selMethodSets</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689E3FAD">
+					<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689E5FAD</DocumentID>
+					<Name>00216A9E-ACB6-11E1-EBA3-99D85C175FA6</Name>
+					<Description>00216A9E-ACB6-11E1-EBA3-99D85C175FA6</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+					<Notes/>
+					<Identifier>
+						<uri
+							id="00216A9E-ACB6-11E1-EBA3-99D85C179FA6"
+						/>
+					</Identifier>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689EFFAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689F1FAD</DocumentID>
+			<Name>00216A9E-ACB6-11E1-EC86-25DED238BFAD</Name>
+			<Description>00216A9E-ACB6-11E1-EC86-25DED238BFAD</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+			<Notes/>
+			<UIRef>output4</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689EBFAD">
+					<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689EDFAD</DocumentID>
+					<Name>00216A9E-ACB6-11E1-EC8C-48FBE45E5FAD</Name>
+					<Description>00216A9E-ACB6-11E1-EC8C-48FBE45E5FAD</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+					<Notes/>
+					<Identifier>
+						<uri
+							id="00216A9E-ACB6-11E1-EC5D-644AF9DBFFAC"
+						/>
+					</Identifier>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-ECEA-00C2EBE63FB2">
+			<DocumentID>00216A9E-ACB6-11E1-ECEA-00C2EBE61FB2</DocumentID>
+			<Name>00216A9E-ACB6-11E1-ECEA-00C2EBE61FB2</Name>
+			<Description>00216A9E-ACB6-11E1-ECEA-00C2EBE61FB2</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-06T09:40:11.603</CreationDate>
+			<Notes/>
+			<UIRef>btDownload</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-ECEE-2534B8073FB2">
+					<DocumentID>00216A9E-ACB6-11E1-ECEE-2534B8071FB2</DocumentID>
+					<Name>00216A9E-ACB6-11E1-ECEE-2534B8071FB2</Name>
+					<Description>00216A9E-ACB6-11E1-ECEE-2534B8071FB2</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-06T09:52:30.588</CreationDate>
+					<Notes/>
+					<Identifier>
+						<uri
+							id="46350000-0031-11E1-EC38-F344B8D7F6AC"
+						/>
+					</Identifier>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-ECEE-2534B8091FB2">
+			<DocumentID>00216A9E-ACB6-11E1-ECEE-2534B808FFB2</DocumentID>
+			<Name>00216A9E-ACB6-11E1-ECEE-2534B808FFB2</Name>
+			<Description>00216A9E-ACB6-11E1-ECEE-2534B808FFB2</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-06T09:51:16.873</CreationDate>
+			<Notes/>
+			<UIRef>btDownload</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-ECEE-2534B8095FB2">
+					<DocumentID>00216A9E-ACB6-11E1-ECEE-2534B8093FB2</DocumentID>
+					<Name>00216A9E-ACB6-11E1-ECEE-2534B8093FB2</Name>
+					<Description>00216A9E-ACB6-11E1-ECEE-2534B8093FB2</Description>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-03-06T09:51:16.873</CreationDate>
+					<Notes/>
+					<Identifier>
+						<uri
+							id="00216A9E-ACB6-11E1-EC42-69F983887FAB"
+						/>
+					</Identifier>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+		<TranslatableUIText
+			type="com.cordys.xforms.TranslatableUIText"
+			RuntimeDocumentID="0026B99A-7FD0-11E1-F0F4-E65A7EDE1B04">
+			<DocumentID>0026B99A-7FD0-11E1-F0F4-E65A7EDDFB04</DocumentID>
+			<Name>0026B99A-7FD0-11E1-F0F4-E65A7EDDFB04</Name>
+			<Description>0026B99A-7FD0-11E1-F0F4-E65A7EDDFB04</Description>
+			<CreatedBy>yravi</CreatedBy>
+			<CreationDate>2012-04-16T11:35:06.983</CreationDate>
+			<Notes/>
+			<UIRef>buttonLoadServiceMappings</UIRef>
+			<TooltipText/>
+			<TranslatableName>
+				<TranslatableText
+					type="com.cordys.translation.TranslatableText"
+					RuntimeDocumentID="BE656D3B-D77D-11E2-E0DF-270A9C0F3FE9">
+					<DocumentID>BE656D3B-D77D-11E2-E0DF-270A9C0F1FE9</DocumentID>
+					<Name>BE656D3B-D77D-11E2-E0DF-270A9C0F1FE9</Name>
+					<Description>BE656D3B-D77D-11E2-E0DF-270A9C0F1FE9</Description>
+					<CreatedBy>sdwivedi</CreatedBy>
+					<CreationDate>2012-09-25T10:54:53.043</CreationDate>
+					<Notes/>
+					<Identifier>
+						<uri
+							id="BE656D3B-D77D-11E2-E0DF-270A9C0F5FE9"
+						/>
+					</Identifier>
+				</TranslatableText>
+			</TranslatableName>
+			<XForm>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</XForm>
+		</TranslatableUIText>
+	</TranslatableUITexts>
+	<Webservices>
+		<uri
+			id="0026B99A-7FD0-11E1-F0F3-BB9E87DDBB04"
+		/>
+	</Webservices>
+	<aclFragments/>
+	<deliveryModels/>
+	<image/>
+	<input/>
+	<messageParts>
+		<MessagePart
+			type="com.cordys.task.MessagePart"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689F7FAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689F9FAD</DocumentID>
+			<Name>ResultMessagesModel</Name>
+			<Description>ResultMessagesModel</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+			<Notes/>
+			<isRefExists>false</isRefExists>
+			<namespace>http://schemas.cordys.com/1.0/xforms/processapi</namespace>
+			<operationName></operationName>
+		</MessagePart>
+		<MessagePart
+			type="com.cordys.task.MessagePart"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689FBFAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD689FDFAD</DocumentID>
+			<Name>GetXMLObjectModel</Name>
+			<Description>GetXMLObjectModel</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+			<Notes/>
+			<isRefExists>true</isRefExists>
+			<namespace>http://schemas.cordys.com/1.0/xmlstore</namespace>
+			<operationName>GetXMLObject</operationName>
+		</MessagePart>
+		<MessagePart
+			type="com.cordys.task.MessagePart"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD689FFFAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD68A01FAD</DocumentID>
+			<Name>RESTURIsModel</Name>
+			<Description>RESTURIsModel</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+			<Notes/>
+			<isRefExists>true</isRefExists>
+			<namespace>http://schemas.cordys.com/RESTMapping</namespace>
+			<operationName>generateAndGetTheServiceRESTMapping</operationName>
+		</MessagePart>
+		<MessagePart
+			type="com.cordys.task.MessagePart"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD68A03FAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD68A05FAD</DocumentID>
+			<Name>RestModel</Name>
+			<Description>RestModel</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.222</CreationDate>
+			<Notes/>
+			<isRefExists>false</isRefExists>
+			<namespace>http://schemas.cordys.com/1.0/xforms/processapi</namespace>
+			<operationName></operationName>
+		</MessagePart>
+		<MessagePart
+			type="com.cordys.task.MessagePart"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD68A07FAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD68A09FAD</DocumentID>
+			<Name>GetSoftwarePackagesOperationModel</Name>
+			<Description>GetSoftwarePackagesOperationModel</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+			<Notes/>
+			<isRefExists>true</isRefExists>
+			<namespace>http://schemas.cordys.com/1.0/ldap</namespace>
+			<operationName>GetSoftwarePackages</operationName>
+		</MessagePart>
+		<MessagePart
+			type="com.cordys.task.MessagePart"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD68A0BFAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD68A0DFAD</DocumentID>
+			<Name>GetOrganizationsByUseroperationModel</Name>
+			<Description>GetOrganizationsByUseroperationModel</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+			<Notes/>
+			<isRefExists>true</isRefExists>
+			<namespace>http://schemas.cordys.com/1.0/ldap</namespace>
+			<operationName>GetOrganizationsByUser</operationName>
+		</MessagePart>
+		<MessagePart
+			type="com.cordys.task.MessagePart"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD68A0FFAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD68A11FAD</DocumentID>
+			<Name>freeformcontrols</Name>
+			<Description>freeformcontrols</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+			<Notes/>
+			<isRefExists>false</isRefExists>
+			<namespace>http://schemas.cordys.com/1.0/xforms/processapi</namespace>
+			<operationName>freeformcontrols</operationName>
+		</MessagePart>
+		<MessagePart
+			type="com.cordys.task.MessagePart"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC8E-43CD68A13FAD">
+			<DocumentID>00216A9E-ACB6-11E1-EC8E-43CD68A15FAD</DocumentID>
+			<Name>GetMethodSetsoperationModel</Name>
+			<Description>GetMethodSetsoperationModel</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-02T14:15:12.237</CreationDate>
+			<Notes/>
+			<isRefExists>true</isRefExists>
+			<namespace>http://schemas.cordys.com/1.0/ldap</namespace>
+			<operationName>GetMethodSets</operationName>
+		</MessagePart>
+		<MessagePart
+			type="com.cordys.task.MessagePart"
+			RuntimeDocumentID="0026B99A-7FD0-11E1-F0F4-E65A7EDBFB04">
+			<DocumentID>0026B99A-7FD0-11E1-F0F4-E65A7EDBDB04</DocumentID>
+			<Name>generateServiceMappingsModel</Name>
+			<Description>generateServiceMappingsModel</Description>
+			<CreatedBy>yravi</CreatedBy>
+			<CreationDate>2012-04-16T11:36:51.667</CreationDate>
+			<Notes/>
+			<isRefExists>true</isRefExists>
+			<namespace>http://schemas.cordys.com/GenerateServiceMappings</namespace>
+			<operationName>generateServiceMappings</operationName>
+		</MessagePart>
+	</messageParts>
+	<messages>
+		<TranslatableText
+			type="com.cordys.translation.TranslatableText"
+			RuntimeDocumentID="D06CA9A9-CA7F-11E1-FE65-CEF943495688">
+			<DocumentID>D06CA9A9-CA7F-11E1-FE65-CEF943493688</DocumentID>
+			<Name>D06CA9A9-CA7F-11E1-FE65-CEF943493688</Name>
+			<Description>D06CA9A9-CA7F-11E1-FE65-CEF943493688</Description>
+			<CreatedBy>sdwivedi</CreatedBy>
+			<CreationDate>2012-08-31T06:24:23.277</CreationDate>
+			<Notes/>
+			<Identifier>
+				<uri
+					id="D06CA9A9-CA7F-11E1-FE65-CEF943485688"
+				/>
+			</Identifier>
+		</TranslatableText>
+		<TranslatableText
+			type="com.cordys.translation.TranslatableText"
+			RuntimeDocumentID="D06CA9A9-CA7F-11E1-FE65-CEF943477688">
+			<DocumentID>D06CA9A9-CA7F-11E1-FE65-CEF943475688</DocumentID>
+			<Name>D06CA9A9-CA7F-11E1-FE65-CEF943475688</Name>
+			<Description>D06CA9A9-CA7F-11E1-FE65-CEF943475688</Description>
+			<CreatedBy>sdwivedi</CreatedBy>
+			<CreationDate>2012-08-31T06:27:36.803</CreationDate>
+			<Notes/>
+			<Identifier>
+				<uri
+					id="D06CA9A9-CA7F-11E1-FE65-CEF943467688"
+				/>
+			</Identifier>
+		</TranslatableText>
+		<TranslatableText
+			type="com.cordys.translation.TranslatableText"
+			RuntimeDocumentID="D06CA9A9-CA7F-11E1-FE66-9FA821D25688">
+			<DocumentID>D06CA9A9-CA7F-11E1-FE66-9FA821D23688</DocumentID>
+			<Name>D06CA9A9-CA7F-11E1-FE66-9FA821D23688</Name>
+			<Description>D06CA9A9-CA7F-11E1-FE66-9FA821D23688</Description>
+			<CreatedBy>sdwivedi</CreatedBy>
+			<CreationDate>2012-08-31T06:28:52.029</CreationDate>
+			<Notes/>
+			<Identifier>
+				<uri
+					id="D06CA9A9-CA7F-11E1-FE66-9FA821D15688"
+				/>
+			</Identifier>
+		</TranslatableText>
+		<TranslatableText
+			type="com.cordys.translation.TranslatableText"
+			RuntimeDocumentID="D06CA9A9-CA7F-11E1-FE66-9FA821D07688">
+			<DocumentID>D06CA9A9-CA7F-11E1-FE66-9FA821D05688</DocumentID>
+			<Name>D06CA9A9-CA7F-11E1-FE66-9FA821D05688</Name>
+			<Description>D06CA9A9-CA7F-11E1-FE66-9FA821D05688</Description>
+			<CreatedBy>sdwivedi</CreatedBy>
+			<CreationDate>2012-08-31T06:30:33.678</CreationDate>
+			<Notes/>
+			<Identifier>
+				<uri
+					id="D06CA9A9-CA7F-11E1-FE66-9FA821CF7688"
+				/>
+			</Identifier>
+		</TranslatableText>
+		<TranslatableText
+			type="com.cordys.translation.TranslatableText"
+			RuntimeDocumentID="D06CA9A9-CA7F-11E1-FE66-9FA821CF3688">
+			<DocumentID>D06CA9A9-CA7F-11E1-FE66-9FA821CF1688</DocumentID>
+			<Name>D06CA9A9-CA7F-11E1-FE66-9FA821CF1688</Name>
+			<Description>D06CA9A9-CA7F-11E1-FE66-9FA821CF1688</Description>
+			<CreatedBy>sdwivedi</CreatedBy>
+			<CreationDate>2012-08-31T06:31:44.896</CreationDate>
+			<Notes/>
+			<Identifier>
+				<uri
+					id="D06CA9A9-CA7F-11E1-FE66-9FA821CE3688"
+				/>
+			</Identifier>
+		</TranslatableText>
+		<TranslatableText
+			type="com.cordys.translation.TranslatableText"
+			RuntimeDocumentID="D06CA9A9-CA7F-11E1-FE66-9FA821CE1688">
+			<DocumentID>D06CA9A9-CA7F-11E1-FE66-9FA821CDF688</DocumentID>
+			<Name>D06CA9A9-CA7F-11E1-FE66-9FA821CDF688</Name>
+			<Description>D06CA9A9-CA7F-11E1-FE66-9FA821CDF688</Description>
+			<CreatedBy>sdwivedi</CreatedBy>
+			<CreationDate>2012-08-31T06:31:44.895</CreationDate>
+			<Notes/>
+			<Identifier>
+				<uri
+					id="D06CA9A9-CA7F-11E1-FE66-9FA821CD7688"
+				/>
+			</Identifier>
+		</TranslatableText>
+		<TranslatableText
+			type="com.cordys.translation.TranslatableText"
+			RuntimeDocumentID="D06CA9A9-CA7F-11E1-FE67-254725B01688">
+			<DocumentID>D06CA9A9-CA7F-11E1-FE67-254725AFF688</DocumentID>
+			<Name>D06CA9A9-CA7F-11E1-FE67-254725AFF688</Name>
+			<Description>D06CA9A9-CA7F-11E1-FE67-254725AFF688</Description>
+			<CreatedBy>sdwivedi</CreatedBy>
+			<CreationDate>2012-08-31T06:58:53.116</CreationDate>
+			<Notes/>
+			<Identifier>
+				<uri
+					id="D06CA9A9-CA7F-11E1-FE66-9FA821C89688"
+				/>
+			</Identifier>
+		</TranslatableText>
+		<TranslatableText
+			type="com.cordys.translation.TranslatableText"
+			RuntimeDocumentID="8FD9E4D9-E07B-11E2-E28A-639048D1D788">
+			<DocumentID>8FD9E4D9-E07B-11E2-E28A-639048D1B788</DocumentID>
+			<Name>8FD9E4D9-E07B-11E2-E28A-639048D1B788</Name>
+			<Description>8FD9E4D9-E07B-11E2-E28A-639048D1B788</Description>
+			<CreatedBy>sdwivedi</CreatedBy>
+			<CreationDate>2012-10-12T10:31:58.19</CreationDate>
+			<Notes/>
+			<Identifier>
+				<uri
+					id="8FD9E4D9-E07B-11E2-E28A-639048D0D788"
+				/>
+			</Identifier>
+		</TranslatableText>
+	</messages>
+	<output/>
+	<tagsContainer/>
+	<taskParts/>
+</XFormDesigntime>

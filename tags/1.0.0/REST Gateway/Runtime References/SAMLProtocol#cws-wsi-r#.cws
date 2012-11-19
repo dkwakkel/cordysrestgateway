@@ -1,0 +1,63 @@
+
+<WebserviceInterfaceRuntime
+	type="com.cordys.wsdl.WebserviceInterfaceRuntime"
+	typeVersion="0019B981-E9E3-11DF-FAD3-F797D376BD43"
+	RuntimeDocumentID="00216A9E-ACB6-11E1-EC5A-3E2D80527FAC">
+	<DocumentID>00216A9E-ACB6-11E1-EC5A-3E2D80525FAC</DocumentID>
+	<Name>SAMLProtocol</Name>
+	<Description>SAMLProtocol</Description>
+	<CreatedBy>ram</CreatedBy>
+	<CreationDate>2012-02-29T12:43:40.661</CreationDate>
+	<Notes/>
+	<BinaryReferenceInfo></BinaryReferenceInfo>
+	<ISVPName></ISVPName>
+	<RuntimeKey>SAMLProtocol</RuntimeKey>
+	<PackageInformation>
+		<CordysBinaryReferenceISVPInfo
+			type="com.cordys.cws.binaryreference.CordysBinaryReferenceISVPInfo"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC5A-3E2D8051BFAC">
+			<DocumentID>00216A9E-ACB6-11E1-EC5A-3E2D80519FAC</DocumentID>
+			<Name>Untitled CordysBinaryReferenceISVPInfo</Name>
+			<Description>Untitled CordysBinaryReferenceISVPInfo</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-02-29T12:43:40.661</CreationDate>
+			<Notes/>
+			<ISVPName>Cordys Single Sign-On</ISVPName>
+		</CordysBinaryReferenceISVPInfo>
+	</PackageInformation>
+	<WebserviceOperations>
+		<WebserviceOperationRuntime
+			type="com.cordys.wsdl.WebserviceOperationRuntime"
+			typeVersion="0019B981-E9E3-11DF-FAD3-F797D376BD43"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC5A-5FC0F91D7FAC">
+			<DocumentID>00216A9E-ACB6-11E1-EC5A-5FC0F91D5FAC</DocumentID>
+			<Name>Request</Name>
+			<Description>Runtime reference for Web Service Operation Request in Web ServiceSAMLProtocol</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-02-29T12:43:41.442</CreationDate>
+			<Notes/>
+			<ImplementationType>SAML</ImplementationType>
+			<BinaryReferenceInfo></BinaryReferenceInfo>
+			<ISVPName></ISVPName>
+			<RuntimeKey>urn:oasis:names:tc:SAML:1.0:protocol/Request</RuntimeKey>
+			<WebserviceInterface>
+				<uri
+					id="00216A9E-ACB6-11E1-EC5A-3E2D80525FAC"
+				/>
+			</WebserviceInterface>
+			<PackageInformation>
+				<CordysBinaryReferenceISVPInfo
+					type="com.cordys.cws.binaryreference.CordysBinaryReferenceISVPInfo"
+					RuntimeDocumentID="00216A9E-ACB6-11E1-EC5A-5FC0F91DBFAC">
+					<DocumentID>00216A9E-ACB6-11E1-EC5A-5FC0F91D9FAC</DocumentID>
+					<Name>00216A9E-ACB6-11E1-EC5A-5FC0F91D9FAC</Name>
+					<Description/>
+					<CreatedBy>ram</CreatedBy>
+					<CreationDate>2012-02-29T12:43:41.442</CreationDate>
+					<Notes/>
+					<ISVPName>Cordys Single Sign-On</ISVPName>
+				</CordysBinaryReferenceISVPInfo>
+			</PackageInformation>
+		</WebserviceOperationRuntime>
+	</WebserviceOperations>
+</WebserviceInterfaceRuntime>
