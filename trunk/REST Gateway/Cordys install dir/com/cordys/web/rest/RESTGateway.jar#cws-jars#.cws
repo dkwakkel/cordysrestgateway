@@ -1,0 +1,35 @@
+
+<JavaArchiveSource
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.cws.documenttypes.javaarchivesource.JavaArchiveSource"
+	RuntimeDocumentID="0026B99A-7FD0-11E1-EAC9-1378FA6D1D8A">
+	<DocumentID>0026B99A-7FD0-11E1-EAC9-1378FA6CFD8A</DocumentID>
+	<Name>RESTGateway.jar</Name>
+	<Description>RESTGateway.jar</Description>
+	<CreatedBy>yravi</CreatedBy>
+	<CreationDate>2012-02-14T05:03:16.725</CreationDate>
+	<Notes/>
+	<JarFileName>RESTGateway</JarFileName>
+	<NamespacePrefix></NamespacePrefix>
+	<Dependencies>
+		<JavaArchiveReferenceDependency
+			type="com.cordys.cws.documenttypes.javaarchivesource.JavaArchiveReferenceDependency"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-EC3B-8EC991A7FFAB">
+			<DocumentID>00216A9E-ACB6-11E1-EC3B-8EC991A7DFAB</DocumentID>
+			<Name>WSApps Java Archive Reference Dependency</Name>
+			<Description>WSApps Java Archive Reference Dependency</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-02-28T09:14:02.925</CreationDate>
+			<Notes/>
+			<DependsOnJAR>?CORDYS_INSTALL_DIR?\components\wsappserver\wsappserver.jar</DependsOnJAR>
+			<ISVPName></ISVPName>
+		</JavaArchiveReferenceDependency>
+	</Dependencies>
+	<SourceFolder>
+		<uri
+			id="E136A398-2E7A-11E1-FD83-9AB4AB7DDFE0"
+			path="REST Gateway/Java Source"
+			type="com.cordys.cws.runtime.types.folder.StudioFolder"
+		/>
+	</SourceFolder>
+</JavaArchiveSource>

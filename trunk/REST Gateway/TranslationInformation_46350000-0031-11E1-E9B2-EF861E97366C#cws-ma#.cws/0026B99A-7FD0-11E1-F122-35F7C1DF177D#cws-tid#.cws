@@ -1,0 +1,23 @@
+
+<TextIdentifier
+	type="com.cordys.translation.TextIdentifier"
+	typeVersion="55890f21-u239-76j6-988a-92j7opq6ws09"
+	RuntimeDocumentID="0026B99A-7FD0-11E1-F122-35F7C1DF377D">
+	<DocumentID>0026B99A-7FD0-11E1-F122-35F7C1DF177D</DocumentID>
+	<Name>0026B99A-7FD0-11E1-F122-35F7C1DF177D</Name>
+	<Description>Refresh_1</Description>
+	<CreatedBy>yravi</CreatedBy>
+	<CreationDate>2012-04-18T04:49:42.486</CreationDate>
+	<Notes/>
+	<DefaultText>Refresh_1</DefaultText>
+	<Translations>
+		<uri
+			id="0026B99A-7FD0-11E1-F122-35F7C1DF577D"
+		/>
+	</Translations>
+	<TranslationInformation>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E96F66C"
+		/>
+	</TranslationInformation>
+</TextIdentifier>

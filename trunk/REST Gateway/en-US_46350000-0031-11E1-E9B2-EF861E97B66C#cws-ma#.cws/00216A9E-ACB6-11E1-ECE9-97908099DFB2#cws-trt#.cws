@@ -1,0 +1,22 @@
+
+<TranslatedText
+	type="com.cordys.translation.TranslatedText"
+	RuntimeDocumentID="00216A9E-ACB6-11E1-ECE9-97908099FFB2">
+	<DocumentID>00216A9E-ACB6-11E1-ECE9-97908099DFB2</DocumentID>
+	<Name>00216A9E-ACB6-11E1-ECE9-97908099DFB2</Name>
+	<Description>Test  REST Services</Description>
+	<CreatedBy>ram</CreatedBy>
+	<CreationDate>2012-03-06T05:49:01.818</CreationDate>
+	<Notes/>
+	<Text>Test  REST Services</Text>
+	<Language>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E97766C"
+		/>
+	</Language>
+	<TextIdentifier>
+		<uri
+			id="00216A9E-ACB6-11E1-ECE9-979080999FB2"
+		/>
+	</TextIdentifier>
+</TranslatedText>

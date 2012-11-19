@@ -1,0 +1,23 @@
+
+<TranslatedText
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.translation.TranslatedText"
+	RuntimeDocumentID="D06CA9A9-CA7F-11E1-FE67-3D2EE119D688">
+	<DocumentID>D06CA9A9-CA7F-11E1-FE67-3D2EE119B688</DocumentID>
+	<Name>D06CA9A9-CA7F-11E1-FE67-3D2EE119B688</Name>
+	<Description>Organization/ISV Package</Description>
+	<CreatedBy>sdwivedi</CreatedBy>
+	<CreationDate>2012-08-31T07:03:30.604</CreationDate>
+	<Notes/>
+	<Text>Organization/ISV Package</Text>
+	<Language>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E97766C"
+		/>
+	</Language>
+	<TextIdentifier>
+		<uri
+			id="00216A9E-ACB6-11E1-EBA3-32D5F52A7FA6"
+		/>
+	</TextIdentifier>
+</TranslatedText>
