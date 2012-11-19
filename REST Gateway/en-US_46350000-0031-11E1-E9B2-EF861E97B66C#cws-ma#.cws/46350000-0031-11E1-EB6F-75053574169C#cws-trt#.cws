@@ -1,0 +1,19 @@
+
+<TranslatedText
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.translation.TranslatedText"
+	RuntimeDocumentID="46350000-0031-11E1-EB6F-75053574369C">
+	<DocumentID>46350000-0031-11E1-EB6F-75053574169C</DocumentID>
+	<Name>46350000-0031-11E1-EB6F-75053574169C</Name>
+	<Description>Translated REST Request XML</Description>
+	<CreatedBy>srajesh</CreatedBy>
+	<CreationDate>2012-02-20T12:27:54.107</CreationDate>
+	<Notes/>
+	<Text>Translated REST Request XML</Text>
+	<Language>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E97766C"
+		/>
+	</Language>
+	<TextIdentifier/>
+</TranslatedText>

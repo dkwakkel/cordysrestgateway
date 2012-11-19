@@ -1,0 +1,20 @@
+
+<WebSource
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.cws.documenttypes.websource.WebSource"
+	RuntimeDocumentID="46350000-0031-11E1-E9B2-EE0766D3D66C">
+	<DocumentID>46350000-0031-11E1-E9B2-EE0766D3B66C</DocumentID>
+	<Name>RESTProvider Web Content</Name>
+	<Description>RESTProvider Web Content</Description>
+	<CreatedBy>srajesh</CreatedBy>
+	<CreationDate>2012-02-02T12:23:36.561</CreationDate>
+	<Notes/>
+	<NamespacePrefix></NamespacePrefix>
+	<SourceFolder>
+		<uri
+			id="E136A398-2E7A-11E1-FD83-9AB4AB2C9FE0"
+			path="REST Gateway/User Interface/Web"
+			type="com.cordys.cws.runtime.types.folder.StudioFolder"
+		/>
+	</SourceFolder>
+</WebSource>

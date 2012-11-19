@@ -1,0 +1,50 @@
+
+<RoleDesignTime
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.organization.role.RoleDesignTime"
+	RuntimeDocumentID="00216A9E-ACB6-11E1-ECD1-71E1C3395FB1">
+	<DocumentID>00216A9E-ACB6-11E1-ECD1-71E1C3393FB1</DocumentID>
+	<Name>ReST Developer</Name>
+	<Description>ReST Developer</Description>
+	<CreatedBy>ram</CreatedBy>
+	<CreationDate>2012-03-05T06:52:02.806</CreationDate>
+	<Notes/>
+	<DistinguishedName>cn=#roleName#, cn=#ISVPName#, #LDAPRoot#</DistinguishedName>
+	<isFunctionalRole>true</isFunctionalRole>
+	<type>Functional</type>
+	<Subroles/>
+	<configuredTasks>
+		<ConfiguredTask
+			type="com.cordys.task.ConfiguredTask"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-ECD1-71E1C3387FB1">
+			<DocumentID>00216A9E-ACB6-11E1-ECD1-71E1C3385FB1</DocumentID>
+			<Name>Generate REST Services_00216A9E-ACB6-11E1-ECD1-71E1C3385FB1</Name>
+			<Description>Generate REST Services_00216A9E-ACB6-11E1-ECD1-71E1C3385FB1</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-05T06:52:02.806</CreationDate>
+			<Notes/>
+			<configuredTaskParts/>
+			<uiTask>
+				<uri
+					id="46350000-0031-11E1-E991-6D123CC87669"
+				/>
+			</uiTask>
+		</ConfiguredTask>
+		<ConfiguredTask
+			type="com.cordys.task.ConfiguredTask"
+			RuntimeDocumentID="00216A9E-ACB6-11E1-ECE9-9790809ABFB2">
+			<DocumentID>00216A9E-ACB6-11E1-ECE9-9790809A9FB2</DocumentID>
+			<Name>Test  REST Services_00216A9E-ACB6-11E1-ECE9-9790809A9FB2</Name>
+			<Description>_00216A9E-ACB6-11E1-ECE9-9790809A9FB2</Description>
+			<CreatedBy>ram</CreatedBy>
+			<CreationDate>2012-03-06T05:48:49.287</CreationDate>
+			<Notes/>
+			<configuredTaskParts/>
+			<uiTask>
+				<uri
+					id="00216A9E-ACB6-11E1-EC8E-43CD68A19FAD"
+				/>
+			</uiTask>
+		</ConfiguredTask>
+	</configuredTasks>
+</RoleDesignTime>

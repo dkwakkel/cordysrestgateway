@@ -1,0 +1,41 @@
+<tuple
+	lastModified="1340975950700"
+	key="/Cordys/servicemapping/soaptorest/186579199/servicemappings.xml"
+	level="organization"
+	name="servicemappings.xml"
+	original="/Cordys/servicemapping/soaptorest/186579199/servicemappings.xml">
+	<old>
+		<ServiceMappings xmlns="http://schemas.cordys.com/ReSTDemo">
+			<ServiceMapping>
+				<WSOperation>GetOrdersObject</WSOperation>
+				<URIPattern>/orders/{0}</URIPattern>
+				<HttpMethod>GET</HttpMethod>
+				<Resource>orders</Resource>
+			</ServiceMapping>
+			<ServiceMapping>
+				<WSOperation>GetOrdersObjects</WSOperation>
+				<URIPattern>/orders/{0}/{1}</URIPattern>
+				<HttpMethod>GET</HttpMethod>
+				<Resource>orders</Resource>
+			</ServiceMapping>
+			<ServiceMapping>
+				<WSOperation>UpdateOrders</WSOperation>
+				<URIPattern>/orders</URIPattern>
+				<HttpMethod>PUT</HttpMethod>
+				<Resource>orders</Resource>
+			</ServiceMapping>
+			<ServiceMapping>
+				<WSOperation>UpdateOrders</WSOperation>
+				<URIPattern>/orders</URIPattern>
+				<HttpMethod>POST</HttpMethod>
+				<Resource>orders</Resource>
+			</ServiceMapping>
+			<ServiceMapping>
+				<WSOperation>UpdateOrders</WSOperation>
+				<URIPattern>/orders/{0}</URIPattern>
+				<HttpMethod>DELETE</HttpMethod>
+				<Resource>orders</Resource>
+			</ServiceMapping>
+		</ServiceMappings>
+	</old>
+</tuple>

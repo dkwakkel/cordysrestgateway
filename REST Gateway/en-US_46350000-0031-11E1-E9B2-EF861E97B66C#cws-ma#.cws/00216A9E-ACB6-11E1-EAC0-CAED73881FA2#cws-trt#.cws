@@ -1,0 +1,19 @@
+
+<TranslatedText
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.translation.TranslatedText"
+	RuntimeDocumentID="00216A9E-ACB6-11E1-EAC0-CAED73883FA2">
+	<DocumentID>00216A9E-ACB6-11E1-EAC0-CAED73881FA2</DocumentID>
+	<Name>00216A9E-ACB6-11E1-EAC0-CAED73881FA2</Name>
+	<Description>Original Copy</Description>
+	<CreatedBy>ram</CreatedBy>
+	<CreationDate>2012-02-13T05:48:30.085</CreationDate>
+	<Notes/>
+	<Text>Original Copy</Text>
+	<Language>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E97766C"
+		/>
+	</Language>
+	<TextIdentifier/>
+</TranslatedText>

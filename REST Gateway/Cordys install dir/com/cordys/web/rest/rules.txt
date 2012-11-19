@@ -1,0 +1,23 @@
+The URL rewrite rule is defined to make the REST URIs user friendly and convert the user friendly URIs to the actual lengthy URIs
+
+IIS
+Add the following entry to the web.config file of your web site under the "configuration/system.webServer" XPath. 
+<rewrite>
+    <rules>
+        <rule enabled="true" name="RESTRule" stopProcessing="true">
+            <match url="^.*/restful/[^?]*"/>
+            <action type="Rewrite" url="{R:0}/com.cordys.web.rest.RESTGateway.wcp"/>
+            <conditions logicalGrouping="MatchAll">
+                <add input="{R:0}" negate="true" pattern=".*\.wcp$"/>
+            </conditions>
+        </rule>
+    </rules>
+</rewrite>
+
+Apache
+Add the following lines to the file *cordys_apache.conf* located at $Cordys_Installation_Directory/components/webgateway/Apache
+
+RewriteEngine on 
+RewriteRule (^.*/restful/[^?]*$)(?<!\.wcp) $1/com.cordys.web.rest.RESTGateway.wcp [L,R] 
+
+Add the above lines at the beginning of the file below the module loading information.

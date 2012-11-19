@@ -1,0 +1,22 @@
+
+<TranslatedText
+	type="com.cordys.translation.TranslatedText"
+	RuntimeDocumentID="46350000-0031-11E1-EA2C-D00EA360367A">
+	<DocumentID>46350000-0031-11E1-EA2C-D00EA360167A</DocumentID>
+	<Name>46350000-0031-11E1-EA2C-D00EA360167A</Name>
+	<Description>Namespace</Description>
+	<CreatedBy>srajesh</CreatedBy>
+	<CreationDate>2012-02-07T08:34:28.64</CreationDate>
+	<Notes/>
+	<Text>Namespace</Text>
+	<Language>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E97766C"
+		/>
+	</Language>
+	<TextIdentifier>
+		<uri
+			id="46350000-0031-11E1-EA2C-D00EA35FD67A"
+		/>
+	</TextIdentifier>
+</TranslatedText>

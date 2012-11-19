@@ -1,0 +1,24 @@
+
+<TextIdentifier
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.translation.TextIdentifier"
+	typeVersion="55890f21-u239-76j6-988a-92j7opq6ws09"
+	RuntimeDocumentID="00216A9E-ACB6-11E1-EBA3-32D5F52A9FA6">
+	<DocumentID>00216A9E-ACB6-11E1-EBA3-32D5F52A7FA6</DocumentID>
+	<Name>00216A9E-ACB6-11E1-EBA3-32D5F52A7FA6</Name>
+	<Description>Organization/ISV Package</Description>
+	<CreatedBy>ram</CreatedBy>
+	<CreationDate>2012-02-22T06:16:23.154</CreationDate>
+	<Notes/>
+	<DefaultText>Organization/ISV Package</DefaultText>
+	<TranslationInformation>
+		<uri
+			id="46350000-0031-11E1-E9B2-EF861E96F66C"
+		/>
+	</TranslationInformation>
+	<Translations>
+		<uri
+			id="D06CA9A9-CA7F-11E1-FE67-3D2EE119B688"
+		/>
+	</Translations>
+</TextIdentifier>

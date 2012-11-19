@@ -1,0 +1,26 @@
+
+<QualifiedNameRoot
+	xmlns:cws="http://schemas.cordys.com/cws/1.0"
+	type="com.cordys.cws.namespace.qualifiedname.QualifiedNameRoot"
+	RuntimeDocumentID="46350000-0031-11E1-E9B2-F04657F6966C">
+	<DocumentID>46350000-0031-11E1-E9B2-F04657F6766C</DocumentID>
+	<Name>designtimeQNR for project</Name>
+	<Description/>
+	<CreatedBy>srajesh</CreatedBy>
+	<CreationDate>2012-02-02T12:14:53.165</CreationDate>
+	<Notes/>
+	<DesigntimeQNRFolder>
+		<uri
+			id="E136A398-2E7A-11E1-FD83-9AB4AB2C1FE0"
+			path="REST Gateway"
+			type="com.cordys.cws.runtime.types.folder.StudioFolder"
+		/>
+	</DesigntimeQNRFolder>
+	<RuntimeQNRFolder>
+		<uri
+			id="E136A398-2E7A-11E1-FD83-9AB4AB2C1FE0"
+			path="REST Gateway"
+			type="com.cordys.cws.runtime.types.folder.StudioFolder"
+		/>
+	</RuntimeQNRFolder>
+</QualifiedNameRoot>
