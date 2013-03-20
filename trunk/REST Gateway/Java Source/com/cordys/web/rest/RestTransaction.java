@@ -292,13 +292,14 @@ public class RestTransaction {
 		return soapRequestNode;
 	}
 
+	private static final String systemUserDNFragment = "cn=SYSTEM,cn=organizational users,";
 	private int getMappingInfo(final String key) {
 		boolean deleteResponse = true;
 		int requestNode = 0;
 		int responseNode = 0;
 		String error = null;
-		try {
-			requestNode = getConnector().createSOAPMethod(organizationDN,
+		try {			
+			requestNode = getConnector().createSOAPMethod(systemUserDNFragment+organizationDN,organizationDN,
 					"http://schemas.cordys.com/1.0/xmlstore", "GetXMLObject");
 			Node.createTextElement("key", key, requestNode);
 			if (logger.isDebugEnabled()) {
