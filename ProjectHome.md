@@ -1,0 +1,1 @@
+The Cordys REST Gateway component exposes web services as REST URIs.
